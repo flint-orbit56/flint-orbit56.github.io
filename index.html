@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hsck 黄仓库官网-资源索引与检索指南</title>
+<meta name="description" content="hsck 黄仓库官网是面向资源收藏者的索引型站点，梳理仓库分区、检索技巧、版本差异与更新节奏，提供分类入口、深度解析、FAQ 与用户评论，方便按用途与时间线查找条目。">
+<meta name="keywords" content="hsck 黄仓库官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f3d2f'/%3E%3Cpath d='M8 20V12h4v3h3v-3h4v3h3v-3h2v8h-2v-3h-3v3h-4v-3h-3v3z' fill='%23e8c15a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#20302a;
+  --ink-2:#3d4f46;
+  --muted:#6c7c73;
+  --line:#d8ded6;
+  --line-2:#e8ece5;
+  --paper:#fbfaf6;
+  --card:#ffffff;
+  --brand:#2f4a3a;
+  --brand-2:#3f6552;
+  --accent:#c19a33;
+  --accent-soft:#f4ead1;
+  --soft:#eef2ec;
+  --danger:#a44b3a;
+  --radius-s:6px;
+  --radius-m:10px;
+  --radius-l:16px;
+  --shadow-s:0 1px 2px rgba(32,48,42,.06);
+  --shadow-m:0 4px 14px rgba(32,48,42,.08);
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-7:48px; --sp-8:64px;
+  --fs-xs:12px; --fs-s:13px; --fs-base:15px; --fs-m:16px; --fs-l:19px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:42px;
+  --header-h:56px; --notice-h:40px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + var(--notice-h) + 12px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+  font-size:var(--fs-base);line-height:1.78;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+h2{font-size:var(--fs-xl)}
+h3{font-size:var(--fs-m)}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.25em}
+li{margin:0 0 var(--sp-1)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:var(--radius-s)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- 吸顶公告 ---------- */
+.notice{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand);color:#f3f2ea;
+  font-size:var(--fs-s);font-family:system-ui,"Microsoft YaHei",sans-serif;
+}
+.notice-in{
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4);
+  min-height:var(--notice-h);display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap;
+}
+.notice-tag{
+  background:var(--accent);color:#2a2313;font-weight:700;
+  padding:2px 8px;border-radius:999px;font-size:var(--fs-xs);letter-spacing:.5px;
+}
+.notice a{color:#ffe9b0}
+.notice .notice-brand{font-weight:700;color:#ffffff}
+
+/* ---------- 页头 ---------- */
+.header{
+  position:sticky;top:var(--notice-h);z-index:55;
+  background:rgba(251,250,246,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  font-family:system-ui,"Microsoft YaHei",sans-serif;
+}
+.header-in{
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4);
+  min-height:var(--header-h);display:flex;align-items:center;gap:var(--sp-4);
+}
+.brand{display:flex;align-items:center;gap:var(--sp-2);flex:none}
+.brand svg{width:34px;height:34px}
+.brand-text{font-size:var(--fs-m);font-weight:800;letter-spacing:.5px;color:var(--brand)}
+.nav{display:flex;gap:2px;flex-wrap:wrap;align-items:center;margin-left:var(--sp-2)}
+.nav a{
+  font-size:var(--fs-s);padding:6px 10px;border-radius:var(--radius-s);color:var(--ink-2);
+}
+.nav a:hover{background:var(--soft);text-decoration:none}
+.nav a.on{background:var(--accent-soft);color:#5a4512;font-weight:700}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:var(--sp-2)}
+.searchbox{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:#fff;padding:2px 4px 2px 10px}
+.searchbox input{
+  border:0;background:transparent;font:inherit;font-size:var(--fs-s);width:120px;padding:4px 2px;color:var(--ink);
+}
+.searchbox input:focus{outline:none}
+.searchbox button{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;padding:5px 12px;font-size:var(--fs-s);cursor:pointer;font-family:inherit;
+}
+.searchbox button:hover{background:var(--brand-2)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);
+  padding:7px 10px;font-size:var(--fs-s);cursor:pointer;font-family:inherit;color:var(--ink);align-items:center;gap:6px;
+}
+.search-hint{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4);font-size:var(--fs-s);font-family:system-ui,"Microsoft YaHei",sans-serif}
+.search-hint .sh-inner{padding:6px 0 10px;color:var(--muted)}
+.search-hint .sh-inner b{color:var(--danger)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 380px at 88% -10%, #e7eedf 0%, rgba(231,238,223,0) 62%),
+    linear-gradient(180deg,#f6f5ec 0%, #fbfaf6 100%);
+  border-bottom:1px solid var(--line-2);
+}
+.hero-in{
+  max-width:var(--maxw);margin:0 auto;padding:var(--sp-7) var(--sp-4) var(--sp-6);
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:var(--sp-7);align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-family:system-ui,"Microsoft YaHei",sans-serif;
+  font-size:var(--fs-xs);letter-spacing:2px;color:var(--brand-2);text-transform:uppercase;
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;margin-bottom:var(--sp-4);
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{
+  font-size:var(--fs-3xl);letter-spacing:1px;color:var(--ink);margin-bottom:var(--sp-3);
+}
+.hero h1 small{display:block;font-size:var(--fs-m);font-weight:400;letter-spacing:0;color:var(--muted);margin-top:10px;font-family:system-ui,"Microsoft YaHei",sans-serif}
+.hero-desc{font-size:var(--fs-m);color:var(--ink-2);max-width:34em;margin-bottom:var(--sp-5)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-bottom:var(--sp-5)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-s);font-weight:700;
+  border:1px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none;transform:translateY(-2px)}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--brand-2);color:var(--brand);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:var(--sp-5);border-top:1px solid var(--line);padding-top:var(--sp-4);max-width:34em}
+.stat b{display:block;font-size:var(--fs-xl);color:var(--brand);line-height:1.2;font-family:system-ui,"Microsoft YaHei",sans-serif}
+.stat span{font-size:var(--fs-xs);color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif}
+
+/* 首屏原创图 */
+.hero-art{position:relative;min-height:340px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 24px rgba(32,48,42,.12))}
+.art-cap{
+  position:absolute;right:6px;bottom:0;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-m);padding:8px 12px;font-size:var(--fs-xs);color:var(--muted);
+  font-family:system-ui,"Microsoft YaHei",sans-serif;box-shadow:var(--shadow-s);max-width:220px;
+}
+
+/* ---------- 布局 ---------- */
+.layout{
+  max-width:var(--maxw);margin:0 auto;padding:var(--sp-6) var(--sp-4) var(--sp-8);
+  display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:var(--sp-6);align-items:start;
+}
+.main{min-width:0}
+.side{min-width:0}
+.side-inner{position:sticky;top:calc(var(--header-h) + var(--notice-h) + 16px)}
+
+section.block{margin-bottom:var(--sp-7)}
+.block-head{display:flex;align-items:baseline;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:var(--sp-4);border-bottom:2px solid var(--brand);padding-bottom:8px}
+.block-head h2{color:var(--ink)}
+.block-head .kh{font-size:var(--fs-xs);color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;letter-spacing:1px}
+.block-sub{font-size:var(--fs-s);color:var(--muted);margin:-4px 0 var(--sp-4)}
+
+/* 概览卡片 */
+.overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s)}
+.ov-card h3{font-size:var(--fs-m);margin-bottom:6px;color:var(--brand)}
+.ov-card p{font-size:var(--fs-s);color:var(--ink-2);margin:0}
+.ov-card .num{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-xs);color:var(--accent);font-weight:700;letter-spacing:1px}
+
+/* 精选卡片网格 */
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4)}
+.pick{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-s);transition:transform .16s ease, box-shadow .16s ease}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-m)}
+.pick img{width:100%;height:140px;object-fit:cover}
+.pick-body{padding:var(--sp-3) var(--sp-4) var(--sp-4);display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-body h3{font-size:var(--fs-m)}
+.pick-body p{font-size:var(--fs-s);color:var(--ink-2);margin:0;flex:1}
+.meta{font-size:var(--fs-xs);color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-block;background:var(--soft);color:var(--brand);border-radius:999px;padding:1px 9px;font-size:var(--fs-xs);font-family:system-ui,"Microsoft YaHei",sans-serif}
+.chip.gold{background:var(--accent-soft);color:#6b5410}
+
+/* 最新更新紧凑列表 / 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);max-width:100%}
+.timeline li{position:relative;padding:0 0 var(--sp-4) var(--sp-5);margin:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:8px;width:11px;height:11px;border-radius:50%;background:#fff;border:2px solid var(--brand-2)}
+.timeline time{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-xs);color:var(--accent);font-weight:700;display:block;letter-spacing:.5px}
+.timeline strong{display:block;font-size:var(--fs-base);color:var(--ink)}
+.timeline p{margin:2px 0 0;font-size:var(--fs-s);color:var(--ink-2)}
+
+/* 分类入口 标签索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--sp-2)}
+.cat{display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:var(--radius-s);padding:9px 12px;font-size:var(--fs-s);color:var(--ink-2);transition:border-color .15s ease, background .15s ease}
+.cat:hover{border-color:var(--brand-2);background:#f7f9f3;text-decoration:none}
+.cat b{color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-xs);font-weight:400}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius-l);padding:var(--sp-5)}
+.deep h3{margin:var(--sp-5) 0 var(--sp-2);color:var(--brand);font-size:var(--fs-l);display:flex;gap:8px;align-items:baseline}
+.deep h3 .n{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-xs);color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:0 5px;flex:none}
+.deep p{color:var(--ink-2)}
+.deep .lede{font-size:var(--fs-m);color:var(--ink)}
+.quote{border-left:4px solid var(--accent);background:var(--accent-soft);padding:var(--sp-3) var(--sp-4);border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:var(--fs-s);color:#4d3d12;margin:var(--sp-4) 0}
+.quote cite{display:block;margin-top:6px;font-style:normal;font-size:var(--fs-xs);color:#7a6320;font-family:system-ui,"Microsoft YaHei",sans-serif}
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:var(--sp-3) 0 var(--sp-4);font-family:system-ui,"Microsoft YaHei",sans-serif}
+.check-table caption{text-align:left;font-size:var(--fs-xs);color:var(--muted);padding-bottom:6px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--soft);color:var(--brand);font-weight:700;white-space:nowrap}
+.check-table td.ok{color:#3a6b4c;font-weight:700}
+.check-table td.no{color:var(--danger);font-weight:700}
+
+/* 体验指南 编号步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-3)}
+.steps li{counter-increment:st;display:grid;grid-template-columns:36px minmax(0,1fr);gap:var(--sp-3);background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4)}
+.steps li::before{content:counter(st,decimal-leading-zero);font-family:system-ui,"Microsoft YaHei",sans-serif;font-weight:800;color:var(--accent);font-size:var(--fs-l);line-height:1.4}
+.steps strong{display:block;color:var(--ink);font-size:var(--fs-base)}
+.steps p{margin:2px 0 0;font-size:var(--fs-s);color:var(--ink-2)}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:var(--radius-m);background:#fff;padding:var(--sp-3) var(--sp-4);margin-bottom:var(--sp-2)}
+.faq summary{cursor:pointer;font-weight:700;color:var(--brand);font-size:var(--fs-base);list-style:none;display:flex;justify-content:space-between;gap:var(--sp-3);align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:system-ui,sans-serif;font-size:20px;color:var(--accent);flex:none;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{font-size:var(--fs-s);color:var(--ink-2);padding-top:var(--sp-2)}
+
+/* 评论 */
+.comments{display:grid;gap:var(--sp-3)}
+.cm{background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4)}
+.cm-head{display:flex;align-items:center;gap:var(--sp-2);margin-bottom:4px;font-family:system-ui,"Microsoft YaHei",sans-serif}
+.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:var(--fs-s);font-weight:700;color:#fff;background:var(--brand-2);flex:none}
+.avatar.b{background:#8a6a2a}
+.avatar.c{background:#5b6f7d}
+.avatar.d{background:#7a4a44}
+.cm-name{font-size:var(--fs-s);font-weight:700;color:var(--ink)}
+.cm-time{font-size:var(--fs-xs);color:var(--muted);margin-left:auto}
+.cm p{margin:0;font-size:var(--fs-s);color:var(--ink-2)}
+.cm .ref{font-size:var(--fs-xs);color:var(--brand-2)}
+
+/* 资讯 */
+.news{display:grid;gap:var(--sp-2)}
+.news-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px dashed var(--line)}
+.news-item time{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-xs);color:var(--muted);padding-top:3px}
+.news-item h3{font-size:var(--fs-base);margin-bottom:2px}
+.news-item p{font-size:var(--fs-s);color:var(--ink-2);margin:0}
+
+/* 推荐标签 */
+.tags{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+.tags a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:var(--fs-s);color:var(--ink-2);font-family:system-ui,"Microsoft YaHei",sans-serif}
+.tags a:hover{border-color:var(--brand-2);color:var(--brand);text-decoration:none;background:#f7f9f3}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden}
+.rank li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:var(--sp-3);align-items:center;padding:10px var(--sp-4);border-bottom:1px solid var(--line-2)}
+.rank li:last-child{border-bottom:0}
+.rank .rk{font-family:system-ui,"Microsoft YaHei",sans-serif;font-weight:800;color:var(--muted);font-size:var(--fs-base)}
+.rank li:nth-child(-n+3) .rk{color:var(--accent)}
+.rank .rk-t{font-size:var(--fs-s);color:var(--ink)}
+.rank .rk-v{font-size:var(--fs-xs);color:var(--muted);font-family:system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.cmp{background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4)}
+.cmp.a{border-top:4px solid var(--brand-2)}
+.cmp.b{border-top:4px solid var(--accent)}
+.cmp h3{font-size:var(--fs-base);margin-bottom:6px}
+.cmp ul{font-size:var(--fs-s);color:var(--ink-2);padding-left:1.1em;margin:0}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);margin-bottom:var(--sp-4);box-shadow:var(--shadow-s)}
+.side-card h2{font-size:var(--fs-m);color:var(--brand);margin-bottom:var(--sp-2);padding-bottom:6px;border-bottom:1px solid var(--line-2)}
+.side-nav{list-style:none;padding:0;margin:0;font-family:system-ui,"Microsoft YaHei",sans-serif}
+.side-nav a{display:block;font-size:var(--fs-s);color:var(--ink-2);padding:6px 8px;border-left:2px solid transparent;border-radius:0 var(--radius-s) var(--radius-s) 0}
+.side-nav a:hover{background:var(--soft);text-decoration:none}
+.side-nav a.active{border-left-color:var(--accent);background:var(--accent-soft);color:#5a4512;font-weight:700}
+.factlist{list-style:none;padding:0;margin:0;font-size:var(--fs-s)}
+.factlist li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line-2)}
+.factlist li:last-child{border-bottom:0}
+.factlist span:first-child{color:var(--muted)}
+.factlist span:last-child{color:var(--ink);font-family:system-ui,"Microsoft YaHei",sans-serif;font-weight:700}
+.side-tags{display:flex;flex-wrap:wrap;gap:6px}
+.side-tags a{font-size:var(--fs-xs);background:var(--soft);border-radius:999px;padding:3px 10px;color:var(--brand);font-family:system-ui,"Microsoft YaHei",sans-serif}
+.side-tags a:hover{background:var(--accent-soft);color:#5a4512;text-decoration:none}
+
+/* 页脚 */
+.footer{background:var(--brand);color:#dfe6db;font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:var(--fs-s)}
+.footer-in{max-width:var(--maxw);margin:0 auto;padding:var(--sp-6) var(--sp-4) var(--sp-4)}
+.footer-top{display:grid;grid-template-columns:1.2fr 2fr;gap:var(--sp-6);padding-bottom:var(--sp-5);border-bottom:1px solid rgba(255,255,255,.14)}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-2)}
+.footer-brand svg{width:30px;height:30px}
+.footer-brand b{font-size:var(--fs-m);color:#fff;letter-spacing:.5px}
+.footer p{color:#c3cec2;margin:0 0 6px;line-height:1.7}
+.f-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4)}
+.f-cols h3{font-size:var(--fs-s);color:#fff;margin-bottom:8px;letter-spacing:.5px}
+.f-cols ul{list-style:none;padding:0;margin:0}
+.f-cols a{color:#c3cec2;font-size:var(--fs-xs);line-height:2}
+.f-cols a:hover{color:#ffe9b0}
+.footer-bottom{padding-top:var(--sp-4);color:#a9b8a7;font-size:var(--fs-xs);display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:space-between}
+.footer-note{background:rgba(255,255,255,.06);border-radius:var(--radius-s);padding:var(--sp-2) var(--sp-3);font-size:var(--fs-xs);color:#c3cec2;margin-bottom:var(--sp-4)}
+
+/* 回到顶部 */
+.totop{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow-m);display:none;place-items:center;font-family:system-ui,sans-serif;
+}
+.totop.show{display:grid}
+.totop:hover{background:var(--accent-soft)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{order:2}
+  .side-inner{position:static}
+  .hero-in{grid-template-columns:minmax(0,1fr);gap:var(--sp-5)}
+  .hero-art{min-height:0;max-width:560px}
+  .picks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-top{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  :root{--fs-3xl:32px}
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:var(--sp-3) var(--sp-4);box-shadow:var(--shadow-m);z-index:56}
+  .header{position:sticky}
+  .header-in{position:relative}
+  .menu-btn{display:inline-flex}
+  .searchbox input{width:92px}
+  .overview{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .f-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  :root{--fs-3xl:28px;--fs-2xl:24px;--fs-xl:21px}
+  .picks{grid-template-columns:1fr}
+  .hero-in{padding-top:var(--sp-6)}
+  .hero-stats{gap:var(--sp-4)}
+  .header-tools{gap:6px}
+  .searchbox{padding-left:8px}
+  .searchbox input{width:74px}
+  .searchbox button{padding:5px 9px}
+  .news-item{grid-template-columns:1fr;gap:2px}
+  .f-cols{grid-template-columns:1fr}
+  .deep{padding:var(--sp-4)}
+  .totop{right:12px;bottom:14px;width:40px;height:40px}
+  .stat b{font-size:var(--fs-l)}
+  .check-table{font-size:var(--fs-xs)}
+  .check-table th,.check-table td{padding:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .pick:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice" id="notice">
+  <div class="notice-in">
+    <span class="notice-tag">更新</span>
+    <span class="notice-brand">hsck 黄仓库官网</span>
+    <span>11 月 7 日新增「索引快照对照」表，补录 10 月 29 日分区调整清单，检索词已同步 42 条。</span>
+    <a href="/#latest">查看最新更新 →</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="header" id="top">
+  <div class="header-in">
+    <a class="brand" href="/#top" aria-label="hsck 黄仓库官网 首页">
+      <svg viewBox="0 0 34 34" role="img" aria-hidden="true">
+        <rect width="34" height="34" rx="8" fill="#2f4a3a"/>
+        <path d="M7 22V11h4.5v3.4h3V11H19v3.4h3V11h4.5v11H22v-3.6h-3V22h-4.5v-3.6h-3V22z" fill="#e8c15a"/>
+      </svg>
+      <span class="brand-text">hsck 黄仓库官网</span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">仓库概览</a>
+      <a href="/#picks">精选条目</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#cats">分类索引</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">检索指南</a>
+      <a href="/#faq">常见问题</a>
+    </nav>
+    <div class="header-tools">
+      <form class="searchbox" id="searchForm" role="search" aria-label="站内检索">
+        <label class="sr-only" for="q">检索仓库条目</label>
+        <input id="q" type="search" placeholder="检索条目 / 分区" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+        <svg width="14" height="12" viewBox="0 0 14 12" aria-hidden="true"><path d="M0 1h14M0 6h14M0 11h14" stroke="currentColor" stroke-width="1.6"/></svg>
+        菜单
+      </button>
+    </div>
+  </div>
+  <div class="search-hint" id="searchHint" hidden>
+    <div class="sh-inner" id="searchHintInner"></div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-in">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>资源索引 · 分区检索 · 版本对照</span>
+      <h1 id="hero-title">hsck 黄仓库官网
+        <small>索引型资源仓库，按分区、版本与时间线组织条目</small>
+      </h1>
+      <p class="hero-desc">一个把零散资源收进编号货架的索引站点：左侧是分区与编号，右侧是版本、抓取日期与摘要。查一条资源，先看它归在哪个货架、哪一次快照，再看摘要是否与预期用途一致。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#cats">进入分类索引</a>
+        <a class="btn btn-ghost" href="/#deep">读深度解析</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>12</b><span>一级分区</span></div>
+        <div class="stat"><b>1,486</b><span>索引条目</span></div>
+        <div class="stat"><b>42</b><span>检索同义词</span></div>
+        <div class="stat"><b>11·07</b><span>最近快照日期</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 460 380" role="img">
+        <defs>
+          <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f4ec"/>
+          </linearGradient>
+        </defs>
+        <rect x="24" y="36" width="412" height="308" rx="18" fill="url(#shelf)" stroke="#d8ded6"/>
+        <rect x="48" y="64" width="170" height="18" rx="4" fill="#2f4a3a" opacity=".85"/>
+        <rect x="48" y="92" width="112" height="9" rx="4" fill="#c9d3c6"/>
+        <g>
+          <rect x="48" y="126" width="80" height="96" rx="6" fill="#e8c15a"/>
+          <rect x="136" y="126" width="80" height="96" rx="6" fill="#3f6552"/>
+          <rect x="224" y="126" width="80" height="96" rx="6" fill="#e6ebdf" stroke="#cdd8c7"/>
+          <rect x="312" y="126" width="80" height="96" rx="6" fill="#8a7b4a"/>
+        </g>
+        <g fill="#ffffff" opacity=".9">
+          <rect x="60" y="146" width="52" height="6" rx="3"/>
+          <rect x="60" y="160" width="38" height="6" rx="3"/>
+          <rect x="148" y="146" width="52" height="6" rx="3"/>
+          <rect x="148" y="160" width="34" height="6" rx="3"/>
+          <rect x="236" y="146" width="48" height="6" rx="3"/>
+          <rect x="236" y="160" width="30" height="6" rx="3"/>
+        </g>
+        <rect x="48" y="240" width="344" height="8" rx="4" fill="#dfe5da"/>
+        <rect x="60" y="264" width="86" height="58" rx="6" fill="#ffffff" stroke="#d8ded6"/>
+        <rect x="158" y="264" width="86" height="58" rx="6" fill="#ffffff" stroke="#d8ded6"/>
+        <rect x="256" y="264" width="86" height="58" rx="6" fill="#ffffff" stroke="#d8ded6"/>
+        <circle cx="82" cy="284" r="9" fill="#e8c15a"/>
+        <circle cx="180" cy="284" r="9" fill="#3f6552"/>
+        <rect x="74" y="300" width="50" height="5" rx="2.5" fill="#d8ded6"/>
+        <rect x="172" y="300" width="50" height="5" rx="2.5" fill="#d8ded6"/>
+        <rect x="270" y="300" width="50" height="5" rx="2.5" fill="#d8ded6"/>
+        <path d="M382 66v96" stroke="#c9d3c6" stroke-width="2" stroke-dasharray="5 6"/>
+        <circle cx="382" cy="66" r="7" fill="#3f6552"/>
+        <path d="M378 176l7 12 7-12" fill="none" stroke="#c9d3c6" stroke-width="2"/>
+      </svg>
+      <div class="art-cap">货架编号：A-12 → 版本 v3.2 → 快照 2026-11-07</div>
+    </div>
+  </div>
+</section>
+
+<!-- 布局：主内容 + 侧栏 -->
+<div class="layout">
+  <main class="main">
+
+    <!-- 1 领域概览 -->
+    <section class="block" id="overview" aria-labelledby="h-overview">
+      <div class="block-head">
+        <h2 id="h-overview">仓库分区概览</h2>
+        <span class="kh">OVERVIEW</span>
+      </div>
+      <p class="block-sub">按内容属性划货架，编号前缀决定分区，前缀后四位决定条目顺序，不按热度排。</p>
+      <div class="overview">
+        <div class="ov-card">
+          <span class="num">A · 资料与文档</span>
+          <h3>文档归档区</h3>
+          <p>收录说明文档、术语表、平台规则摘录与历史版本差异表。截至 11 月 7 日有 214 条，按平台前缀分为 A1（规则）、A2（术语）、A3（版本对照）。</p>
+        </div>
+        <div class="ov-card">
+          <span class="num">B · 索引条目</span>
+          <h3>条目检索区</h3>
+          <p>主体货架，编号 B-0001 至 B-0987。每条含标题、原始出处、抓取日期与三行摘要，抓取日期统一记录到日，不接受被改写过的二次摘要。</p>
+        </div>
+        <div class="ov-card">
+          <span class="num">C · 快照与对照</span>
+          <h3>时间线对照区</h3>
+          <p>保存同一分区不同日期的快照差异。10 月 29 日的分区调整在此留有对照记录，可逐条看到哪 6 条条目被改了归位前缀。</p>
+        </div>
+        <div class="ov-card">
+          <span class="num">D · 维护记录</span>
+          <h3>变更登记区</h3>
+          <p>记录索引词表增删、章节合并与失效条目下架。11 月 1 日至 7 日间新增同义检索词 42 条，下架失效条目 9 条，原因多为原始出处关闭。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="block" id="picks" aria-labelledby="h-picks">
+      <div class="block-head">
+        <h2 id="h-picks">精选条目推荐</h2>
+        <span class="kh">SELECTED</span>
+      </div>
+      <p class="block-sub">五条常在检索词里被反复搜索的条目，附出处与摘要，摘要只写可核对的事实。</p>
+      <div class="picks">
+        <article class="pick">
+          <img src="https://picsum.photos/seed/hsck-a178/420/280" width="420" height="280" loading="lazy" alt="货架 A1 区：规则摘录文档与修订标签特写">
+          <div class="pick-body">
+            <span class="meta"><span class="chip">A1-084</span><span>10·31</span></span>
+            <h3>平台规则摘录 2026 版</h3>
+            <p>把三家平台 10 月 20 日后的条款变动摘成 14 页对照表，标出改动点与原条款序号，删去重复段落。</p>
+            <a href="/#deep" class="meta" style="color:var(--brand-2)">关联解析 →</a>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/hsck-b331/420/280" width="420" height="280" loading="lazy" alt="条目索引卡片排列，红色编号标签清晰可见">
+          <div class="pick-body">
+            <span class="meta"><span class="chip">B-0416</span><span>11·03</span></span>
+            <h3>条目编号编排规则说明</h3>
+            <p>说明 B 区四位编号如何分段：前两位为采集批次，后两位为批次内序号，附 18 个实例核对。</p>
+            <a href="/#guide" class="meta" style="color:var(--brand-2)">检索步骤 →</a>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/hsck-c097/420/280" width="420" height="280" loading="lazy" alt="前后两份快照打印稿并排摆放，标注差异处">
+          <div class="pick-body">
+            <span class="meta"><span class="chip gold">C-012</span><span>10·29</span></span>
+            <h3>分区调整前快照对照</h3>
+            <p>10 月 29 日调整前后的 A/B 两区归位变化，列出 6 条改号条目及旧编号查找入口。</p>
+            <a href="/#latest" class="meta" style="color:var(--brand-2)">查看时间线 →</a>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/hsck-d522/420/280" width="420" height="280" loading="lazy" alt="术语表面板，右侧有手写批注线条">
+          <div class="pick-body">
+            <span class="meta"><span class="chip">A2-033</span><span>11·05</span></span>
+            <h3>仓库检索同义词表</h3>
+            <p>42 条同义检索词，覆盖旧编号与新分区叫法，解决换了编号找不到条目的问题。</p>
+            <a href="/#cats" class="meta" style="color:var(--brand-2)">分类索引 →</a>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/hsck-e264/420/280" width="420" height="280" loading="lazy" alt="维护记录台账，多行日期与删条目记录">
+          <div class="pick-body">
+            <span class="meta"><span class="chip">D-006</span><span>11·07</span></span>
+            <h3>失效条目下架登记</h3>
+            <p>本周下架 9 条，逐条登记原出处关闭日期与替代条目编号，避免重复检索落空。</p>
+            <a href="/#latest" class="meta" style="color:var(--brand-2)">登记明细 →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="block" id="latest" aria-labelledby="h-latest">
+      <div class="block-head">
+        <h2 id="h-latest">最新更新与变更</h2>
+        <span class="kh">UPDATES</span>
+      </div>
+      <ul class="timeline">
+        <li>
+          <time datetime="2026-11-07">11 月 7 日</time>
+          <strong>新增「索引快照对照」表 A3-014</strong>
+          <p>把 10 月 29 日调整前后的 B 区条目逐条并列，标出改号、合并、拆分三类变化，共覆盖 6 条记录。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-05">11 月 5 日</time>
+          <strong>检索同义词表扩到 42 条</strong>
+          <p>新增 11 条旧编号别名，重点处理「黄仓库旧号」与「新分区号」之间的跳转，另附 3 个反例说明别再用的老叫法。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-03">11 月 3 日</time>
+          <strong>B 区编号规则说明更新到 v2</strong>
+          <p>补入 18 个实例，其中 B-0416、B-0522 两条被用来对照采集批次分段写法。</p>
+        </li>
+        <li>
+          <time datetime="2026-11-01">11 月 1 日</time>
+          <strong>下架失效条目 9 条并登记</strong>
+          <p>原出处关闭或改版导致无法核对，登记表 D-006 逐条记录原地址关闭日与可替代条目。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="block" id="cats" aria-labelledby="h-cats">
+      <div class="block-head">
+        <h2 id="h-cats">分类入口索引</h2>
+        <span class="kh">INDEX</span>
+      </div>
+      <p class="block-sub">12 个一级分区，括号为当前条目数，点开即到对应货架说明。</p>
+      <div class="cat-grid">
+        <a class="cat" href="/#overview">文档归档区 <b>A · 214</b></a>
+        <a class="cat" href="/#overview">条目检索区 <b>B · 987</b></a>
+        <a class="cat" href="/#overview">快照对照区 <b>C · 63</b></a>
+        <a class="cat" href="/#overview">维护登记区 <b>D · 48</b></a>
+        <a class="cat" href="/#deep">版本差异表 <b>A3 · 31</b></a>
+        <a class="cat" href="/#guide">编号编排规则 <b>B0 · 12</b></a>
+        <a class="cat" href="/#guide">检索同义词 <b>A2 · 42</b></a>
+        <a class="cat" href="/#latest">快照时间线 <b>C1 · 27</b></a>
+        <a class="cat" href="/#news">平台规则变动 <b>A1 · 19</b></a>
+        <a class="cat" href="/#rank">高频检索条目 <b>Bx · 20</b></a>
+        <a class="cat" href="/#faq">新旧编号对照 <b>C2 · 8</b></a>
+        <a class="cat" href="/#guide">摘要写作规范 <b>D1 · 6</b></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析（主体阅读区） -->
+    <section class="block" id="deep" aria-labelledby="h-deep">
+      <div class="block-head">
+        <h2 id="h-deep">深度解析：编号优先于热度之后，仓库还剩什么</h2>
+        <span class="kh">ANALYSIS</span>
+      </div>
+      <article class="deep">
+        <p class="lede">索引站的成败不在条目多少，而在编号体系能不能被外部复核。这一点在 10 月 29 日那次分区调整里暴露得很清楚：当天有 6 条条目换了前缀，如果不保留旧编号入口，原有链接就全部断开。</p>
+
+        <h3><span class="n">01</span>旧编号并非失效，而是被跳转表接管</h3>
+        <p>10 月 29 日的调整把 B 区里 3 条偏文档属性的条目移入 A 区，2 条合并到 B-0522，另有 1 条拆分。调整后旧号没有作废，而是在 C2 区留了一张 8 条的新旧编号对照表。可以核对的结构如下：</p>
+        <table class="check-table">
+          <caption>对照来源：C1 快照时间线 · 10 月 29 日记录与 D-006 下架登记</caption>
+          <thead>
+            <tr><th>核对项</th><th>调整前</th><th>调整后</th><th>是否可查</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>前缀归属</td><td>B 区</td><td>A 区</td><td class="ok">C2 表可查</td></tr>
+            <tr><td>旧号访问</td><td>直接命中</td><td>经对照表跳转</td><td class="ok">跳转正常</td></tr>
+            <tr><td>摘要原文</td><td>保留</td><td>保留，不重写</td><td class="ok">可逐字比</td></tr>
+            <tr><td>批次编号</td><td>沿用</td><td>沿用，不改批次</td><td class="no">未重新标注</td></tr>
+          </tbody>
+        </table>
+        <p>批次编号没有重新标注，是这次调整里最容易被质问的地方：一个条目换了货架，却还挂旧批次，新读者看到的是 A 区号加 B 批次段，容易误判采集时间。A3-014 表把这一项单独列了出来，没有藏在摘要里。</p>
+
+        <h3><span class="n">02</span>42 条同义词里，真正有用的不到一半</h3>
+        <p>11 月 5 日的同义词表一共 42 条。逐条看，24 条是把旧分区名映射到新分区名，属于必要；10 条只是缩写差异，例如把「仓库文档」写成「仓档」，命中率依赖输入习惯；剩下 8 条是误拼写，是否保留存在争议。对照 A2-033 表的原文，能直接举出三例：</p>
+        <ul>
+          <li>「黄仓库旧号」→ C2 对照表，稳定命中，因为它指向的是一张可维护的表，不是某条条目。</li>
+          <li>「仓档」→ A 区列表，只在前缀匹配时生效，完整词搜索反而落空。</li>
+          <li>「hsck 早期叫法」→ 无对应条目，表里注为「待补」，目前不产生结果。</li>
+        </ul>
+        <p>这条判断可以反驳：保留误拼写能降低新用户第一次检索的挫败感，代价是词表每次分区调整都要连带维护。10 月 29 日调整后 3 天内，词表改了 2 次，维护压力是实打实的。</p>
+
+        <h3><span class="n">03</span>摘要三行制压住了信息增量，也压住了误读</h3>
+        <p>B 区所有条目摘要固定三行：第一行写对象，第二行写来源与日期，第三行写关联条目。11 月 3 日规则说明 v2 里，把第三行从「备注」改成「关联条目」后，跨条目跳转次数上升，但摘要里不再出现主观评价。代价是某个条目如果本身信息稀薄，三行会显得空洞。B-0416 就是例子：三行里有两行在讲编排规则，实际内容只剩一条编号实例。</p>
+        <div class="quote">
+          「摘要不负责好看，负责让你在点进去之前就知道会看到什么。三行写不满，说明条目该重新采。」
+          <cite>—— A3 版本差异表页眉注，2026 年 10 月 31 日</cite>
+        </div>
+
+        <h3><span class="n">04</span>下架 9 条暴露的是出处依赖，而非仓库体量</h3>
+        <p>11 月 1 日下架的 9 条，原因集中在原出处关站或改版，8 条属平台规则摘录类，1 条属章节合并后的冗余条目。D-006 登记表给出的替代条目只有 5 条，另外 4 条标为「待重新采集」。这说明仓库的稳定度受上游出处支配，条目总数 1,486 并不是可靠指标。能核对的替代关系全在登记表里，不在首页数字上。</p>
+
+        <h3><span class="n">05</span>可反驳的具体判断</h3>
+        <p>「编号优先于热度」是这套体系的核心主张。拿 Bx 高频检索榜对照：前 20 条里 11 条属于 B 区，4 条属于 A1 规则摘录，说明实际检索行为确实偏向条目区而非文档区，支持按用途分货架而非按点击排。反过来看，热度榜里 6 条在 10 月 29 日后改过前缀，如果不保留旧号，榜单本身就会失真。这里的事实是改号，推测是旧号长期保留的必要性；两者分开写，才能被核对。</p>
+      </article>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="block" id="guide" aria-labelledby="h-guide">
+      <div class="block-head">
+        <h2 id="h-guide">体验指南：四步查到一个条目</h2>
+        <span class="kh">GUIDE</span>
+      </div>
+      <ol class="steps">
+        <li>
+          <div>
+            <strong>先定用途，再定分区</strong>
+            <p>要查规则条款去 A1，要查具体条目去 B，要查某次调整前后差异去 C1。分区分错，后面检索词再准也会绕路。</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>用编号而非标题检索</strong>
+            <p>标题可能被压缩成摘要式写法，编号不会变。B-0416、A1-084 这类编号在搜索框里直接命中，比输入整段标题快。</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>查不到旧号时走对照表</strong>
+            <p>10 月 29 日之后改过前缀的 6 条，在 C2 新旧编号对照表里有映射。先查对照表，再回 B 区或 A 区，避免误以为条目被删。</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>核对抓取日期与替代条目</strong>
+            <p>摘要第二行给出抓取日期，超过 30 天未更新的条目先看 D-006 下架登记，再决定是否继续查。下架不等于内容消失，常有替代条目。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="block faq" id="faq" aria-labelledby="h-faq">
+      <div class="block-head">
+        <h2 id="h-faq">常见问题</h2>
+        <span class="kh">FAQ</span>
+      </div>
+      <details open>
+        <summary>条目编号里的前两位代表什么？</summary>
+        <div class="ans">前两位是采集批次号，后两位是批次内序号。10 月 29 日调整前采集的批次仍沿用旧批次号，所以出现 A 区号带 B 批次段的情况，A3-014 表有专门说明。</div>
+      </details>
+      <details>
+        <summary>10 月 29 日调整后，旧编号还能搜到吗？</summary>
+        <div class="ans">能。旧号通过 C2 新旧编号对照表跳转，共 8 条映射，覆盖改号、合并、拆分三类变化。旧号本身不再直接显示摘要，需要跳转到新号页面查看。</div>
+      </details>
+      <details>
+        <summary>抓取日期超过 30 天的条目还能用吗？</summary>
+        <div class="ans">抓取日期只说明摘要的采集时点，不代表条目不可用。处理方式是先看 D-006 下架登记里有没有该条目的替代说明，若有则按替代条目查；没有则视为摘要仍有效，但结论需重新核对原出处。</div>
+      </details>
+      <details>
+        <summary>同义词表里的「待补」是什么意思？</summary>
+        <div class="ans">「待补」表示该检索词尚无稳定映射目标，当前输入不会返回条目。11 月 5 日版本里「hsck 早期叫法」就是待补状态，词表维护记录会标注它何时被补全或删除。</div>
+      </details>
+      <details>
+        <summary>为什么有的条目摘要是三行，有的显得很短？</summary>
+        <div class="ans">摘要统一三行：对象、来源与日期、关联条目。显得短，多因第三行关联条目过少或占用行数不足，B-0416 是典型例子。规则说明 v2 要求三行写不满时重新采集，而不是加形容词凑数。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="block" id="comments" aria-labelledby="h-comments">
+      <div class="block-head">
+        <h2 id="h-comments">用户评论</h2>
+        <span class="kh">COMMENTS</span>
+      </div>
+      <div class="comments">
+        <div class="cm">
+          <div class="cm-head"><span class="avatar">林</span><span class="cm-name">林间拾页</span><span class="cm-time">11 月 7 日</span></div>
+          <p>编号检索确实比标题靠谱。我按 B-0416 一搜就到，但点进去发现摘要第三行两行都在讲编排规则，实际内容只有一条实例，稍微有点落差。</p>
+        </div>
+        <div class="cm">
+          <div class="cm-head"><span class="avatar b">周</span><span class="cm-name">周更不追更</span><span class="cm-time">11 月 6 日</span></div>
+          <p>A2-033 的词表帮了大忙，旧号换了前缀之后一直搜不到，后来从「黄仓库旧号」这个词跳到 C2 表才找回来。<span class="ref">指 C2 对照表第 3 条。</span></p>
+        </div>
+        <div class="cm">
+          <div class="cm-head"><span class="avatar c">陈</span><span class="cm-name">陈默·索引组外</span><span class="cm-time">11 月 5 日</span></div>
+          <p>觉得 42 条同义词有点冗余。10 条缩写差异里有一半用户根本不会输入，维护成本比收益高。但 11 条旧号别名是必要的，这点没得说。</p>
+        </div>
+        <div class="cm">
+          <div class="cm-head"><span class="avatar d">吴</span><span class="cm-name">吴端</span><span class="cm-time">11 月 4 日</span></div>
+          <p>下架 9 条只给了 5 条替代，剩下 4 条标待重新采集，这 4 条我上周还在用。登记表写得很清楚，但这周确实有空窗，得等。</p>
+        </div>
+        <div class="cm">
+          <div class="cm-head"><span class="avatar">赵</span><span class="cm-name">赵小满</span><span class="cm-time">11 月 3 日</span></div>
+          <p>三行摘要规则挺好，至少点进去之前知道会看到什么。10 月 31 日那份规则摘录对照表尤其好，改哪一条、原序号是几，一栏一栏对着看就行。</p>
+        </div>
+        <div class="cm">
+          <div class="cm-head"><span class="avatar b">许</span><span class="cm-name">许听风</span><span class="cm-time">11 月 2 日</span></div>
+          <p>整体能用，但搜索框对带空格的编号不太友好。输入「B 0416」返回空结果，必须去掉空格。属于小毛病，不过常输错的人不止我一个。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="block" id="news" aria-labelledby="h-news">
+      <div class="block-head">
+        <h2 id="h-news">相关资讯</h2>
+        <span class="kh">NEWS</span>
+      </div>
+      <div class="news">
+        <div class="news-item">
+          <time datetime="2026-11-06">11 月 6 日</time>
+          <div>
+            <h3>平台规则摘录 2026 版交到 A1 区归档</h3>
+            <p>新版本共 14 页，对照对象是 10 月 20 日后的条款变动，标注了改动点与原条款序号，旧版作为历史条目保留在 A1-083。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <time datetime="2026-11-04">11 月 4 日</time>
+          <div>
+            <h3>B 区条目总数降到 987</h3>
+            <p>较 10 月末减少 11 条，其中 9 条为失效下架，另外 2 条合并进 B-0522。数字变化全部可在 D-006 和 C1 记录里追溯。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <time datetime="2026-10-31">10 月 31 日</time>
+          <div>
+            <h3>新版规则摘录附了原条款序号</h3>
+            <p>A1-084 在 6 处条款前加了原序号方括号，方便交叉核对。此前版本只有章节名，没有条款号，对照时容易错行。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <time datetime="2026-10-29">10 月 29 日</time>
+          <div>
+            <h3>B 区 6 条条目改前缀</h3>
+            <p>3 条移入 A 区，2 条合并，1 条拆分。当天即建 C1 快照记录，两天后补入 C2 新旧编号对照表，含 8 条映射。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="block" id="related" aria-labelledby="h-related">
+      <div class="block-head">
+        <h2 id="h-related">相关推荐</h2>
+        <span class="kh">RELATED</span>
+      </div>
+      <div class="tags">
+        <a href="/#picks">仓库条目编号规则</a>
+        <a href="/#deep">分区调整前后快照差异</a>
+        <a href="/#cats">新旧编号对照表</a>
+        <a href="/#guide">摘要三行写法</a>
+        <a href="/#faq">失效条目替代关系</a>
+        <a href="/#latest">检索同义词维护记录</a>
+        <a href="/#comments">B-0416 摘要讨论</a>
+        <a href="/#rank">高频检索条目榜</a>
+      </div>
+    </section>
+
+    <!-- 11 补充：高频检索榜 -->
+    <section class="block" id="rank" aria-labelledby="h-rank">
+      <div class="block-head">
+        <h2 id="h-rank">高频检索条目榜</h2>
+        <span class="kh">RANKING</span>
+      </div>
+      <p class="block-sub">统计窗口为 10 月 9 日至 11 月 7 日，含改号前后的合并计数，按检索次数降序排列。数字来自站内检索日志，去重口径为单次会话。</p>
+      <ol class="rank">
+        <li><span class="rk">01</span><span class="rk-t">B-0416 条目编号编排规则说明</span><span class="rk-v">2,140 次</span></li>
+        <li><span class="rk">02</span><span class="rk-t">A1-084 平台规则摘录 2026 版</span><span class="rk-v">1,872 次</span></li>
+        <li><span class="rk">03</span><span class="rk-t">C2 新旧编号对照表</span><span class="rk-v">1,530 次</span></li>
+        <li><span class="rk">04</span><span class="rk-t">A2-033 仓库检索同义词表</span><span class="rk-v">1,204 次</span></li>
+        <li><span class="rk">05</span><span class="rk-t">D-006 失效条目下架登记</span><span class="rk-v">986 次</span></li>
+        <li><span class="rk">06</span><span class="rk-t">B-0522 合并后条目</span><span class="rk-v">741 次</span></li>
+        <li><span class="rk">07</span><span class="rk-t">C1 快照时间线 · 10 月 29 日</span><span class="rk-v">603 次</span></li>
+      </ol>
+    </section>
+
+    <!-- 12 补充：两种处理方式对照 -->
+    <section class="block" id="compare" aria-labelledby="h-compare">
+      <div class="block-head">
+        <h2 id="h-compare">改号条目的两种处理方式对照</h2>
+        <span class="kh">COMPARE</span>
+      </div>
+      <div class="compare">
+        <div class="cmp a">
+          <h3>保留旧号 + 对照表跳转</h3>
+          <ul>
+            <li>旧号仍能命中，落到 C2 映射记录</li>
+            <li>摘要原文保持，不重写</li>
+            <li>需要维护 8 条映射，调整期 3 天内改 2 次</li>
+            <li>批次号沿用，跨区阅读会看到混合编号</li>
+          </ul>
+        </div>
+        <div class="cmp b">
+          <h3>旧号直接作废 + 通知</h3>
+          <ul>
+            <li>检索结果明确，但历史链接全部失效</li>
+            <li>摘要可随新货架重写，一致性更高</li>
+            <li>无需映射表，维护成本低</li>
+            <li>外部引用与检索日志里的旧记录无法回溯</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:var(--fs-s);color:var(--muted);margin-top:var(--sp-3)">10 月 29 日的实际选择是前者。理由在于高频检索榜里 6 条改号条目分布在榜首与第三位，作废旧号会让榜单统计断裂。这一判断的反面是：映射表本身成为需要维护的新对象。</p>
+    </section>
+
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="side" aria-label="辅助信息">
+    <div class="side-inner">
+      <div class="side-card">
+        <h2>本页栏目</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">仓库分区概览</a></li>
+          <li><a href="/#picks">精选条目推荐</a></li>
+          <li><a href="/#latest">最新更新与变更</a></li>
+          <li><a href="/#cats">分类入口索引</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#rank">高频检索榜</a></li>
+          <li><a href="/#compare">处理方式对照</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>快照参数</h2>
+        <ul class="factlist">
+          <li><span>最近快照</span><span>11·07</span></li>
+          <li><span>条目总数</span><span>1,486</span></li>
+          <li><span>本月下架</span><span>9 条</span></li>
+          <li><span>同义检索词</span><span>42 条</span></li>
+          <li><span>改号映射</span><span>8 条</span></li>
+          <li><span>替代条目</span><span>5 条</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>常用检索词</h2>
+        <div class="side-tags">
+          <a href="/#deep">仓库条目编号规则</a>
+          <a href="/#cats">新旧编号对照表</a>
+          <a href="/#guide">摘要三行写法</a>
+          <a href="/#faq">失效条目替代</a>
+          <a href="/#news">平台规则摘录</a>
+          <a href="/#rank">高频检索条目</a>
+          <a href="/#latest">快照时间线</a>
+        </div>
+      </div>
+      <div class="side-card">
+        <h2>核对提示</h2>
+        <p style="font-size:var(--fs-s);color:var(--ink-2);margin:0">编号搜索不支持空格，可试「B-0416」而非「B 0416」。旧号查不到时先看 C2 对照表，再判断是否下架。</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- 页脚 -->
+<footer class="footer" id="footer">
+  <div class="footer-in">
+    <div class="footer-note">页面内所有条目编号、日期、次数均为示例数据，用于展示索引结构与核对方式，不代表任何真实资源或外部平台记录。</div>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 30 30" role="img" aria-hidden="true">
+            <rect width="30" height="30" rx="7" fill="#e8c15a"/>
+            <path d="M6 19V10h4v3h3v-3h4v3h3v-3h4v9h-4v-3h-3v3h-4v-3h-3v3z" fill="#2f4a3a"/>
+          </svg>
+          <b>hsck 黄仓库官网</b>
+        </div>
+        <p>把资源收进编号货架，先看分区，再看批次与快照日期。</p>
+        <p>页面更新：2026 年 11 月 8 日 · 对应正文更新项为 11 月 7 日新增的快照对照表与 11 月 6 日的规则摘录归档。</p>
+      </div>
+      <div class="f-cols">
+        <div>
+          <h3>仓库栏目</h3>
+          <ul>
+            <li><a href="/#overview">仓库分区概览</a></li>
+            <li><a href="/#picks">精选条目推荐</a></li>
+            <li><a href="/#latest">最新更新与变更</a></li>
+            <li><a href="/#cats">分类入口索引</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>阅读与核对</h3>
+          <ul>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">检索指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#rank">高频检索条目榜</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>互动与反馈</h3>
+          <ul>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#compare">处理方式对照</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 hsck 黄仓库官网 · 示例内容仅作结构演示</span>
+      <span>索引维护：条目编号 · 快照日期 · 同义词表</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  function closeMenu(){
+    if(nav.classList.contains('open')){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  }
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ closeMenu(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeMenu(); }
+  });
+  document.addEventListener('click', function(e){
+    if(nav.classList.contains('open') && !nav.contains(e.target) && !menuBtn.contains(e.target)){ closeMenu(); }
+  });
+
+  /* 本地检索 */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var hint = document.getElementById('searchHint');
+  var hintInner = document.getElementById('searchHintInner');
+
+  var index = [
+    {t:'仓库分区概览', k:'仓库 分区 概览 货架 编号', id:'#overview'},
+    {t:'精选条目推荐', k:'精选 条目 推荐 平台规则摘录 编号编排', id:'#picks'},
+    {t:'最新更新与变更', k:'最新 更新 变更 快照 对照 时间线', id:'#latest'},
+    {t:'分类入口索引', k:'分类 入口 索引 文档 归档 检索区', id:'#cats'},
+    {t:'深度解析', k:'深度 解析 旧编号 跳转表 同义词 摘要', id:'#deep'},
+    {t:'体验指南', k:'指南 步骤 检索 编号 对照表', id:'#guide'},
+    {t:'常见问题', k:'faq 问题 编号 前缀 待补 抓取日期', id:'#faq'},
+    {t:'用户评论', k:'评论 用户 反馈 B-0416 A2-033', id:'#comments'},
+    {t:'相关资讯', k:'资讯 新闻 规则摘录 总数 改前缀', id:'#news'},
+    {t:'相关推荐', k:'推荐 标签 同义词 替代关系 高频', id:'#related'},
+    {t:'高频检索条目榜', k:'排行 榜单 高频 检索次数', id:'#rank'},
+    {t:'改号条目两种处理方式对照', k:'对照 改号 旧号 映射表 作废', id:'#compare'}
+  ];
+
+  function doSearch(raw){
+    var q = (raw || '').trim().toLowerCase();
+    if(!q){
+      hint.hidden = true;
+      hintInner.innerHTML = '';
+      return;
+    }
+    var compact = q.replace(/[\s\-_/]+/g,'');
+    var hit = [];
+    for(var i=0;i<index.length;i++){
+      var it = index[i];
+      var hay = (it.t + ' ' + it.k).toLowerCase();
+      var hayCompact = hay.replace(/[\s\-_/]+/g,'');
+      if(hay.indexOf(q) > -1 || hayCompact.indexOf(compact) > -1){
+        hit.push(it);
+      }
+    }
+    hint.hidden = false;
+    if(hit.length === 0){
+      hintInner.innerHTML = '未找到与「' + escapeHtml(raw.trim()) + '」匹配的栏目。可试：<b>B-0416</b>、<b>新旧编号对照表</b>、<b>同义词</b>、<b>快照时间线</b>。';
+      return;
+    }
+    var out = '找到 ' + hit.length + ' 个栏目：';
+    var links = [];
+    for(var j=0;j<hit.length && j<6;j++){
+      links.push('<a href="/' + hit[j].id + '">' + escapeHtml(hit[j].t) + '</a>');
+    }
+    hintInner.innerHTML = out + links.join(' · ');
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    doSearch(input.value);
+    if(hint.hidden === false && input.value.trim()){
+      hint.scrollIntoView({block:'nearest'});
+    }
+  });
+  input.addEventListener('input', function(){ doSearch(input.value); });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+    highlight();
+  }
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+    document.getElementById('q').focus({preventScroll:true});
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function highlight(){
+    var offset = 110;
+    var idx = -1;
+    for(var i=0;i<sections.length;i++){
+      var r = sections[i].getBoundingClientRect();
+      if(r.top - offset <= 0){ idx = i; }
+    }
+    sideLinks.forEach(function(a){ a.classList.remove('active'); });
+    if(idx >= 0 && sideLinks[idx]){ sideLinks[idx].classList.add('active'); }
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', function(){ onScroll(); });
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"hsck 黄仓库官网",
+  "description":"索引型资源仓库站点，按分区、编号、快照日期组织条目，提供检索指南、深度解析与用户评论。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"条目编号里的前两位代表什么？","acceptedAnswer":{"@type":"Answer","text":"前两位是采集批次号，后两位是批次内序号。10 月 29 日调整前采集的批次仍沿用旧批次号，A3-014 表有专门说明。"}},
+    {"@type":"Question","name":"10 月 29 日调整后，旧编号还能搜到吗？","acceptedAnswer":{"@type":"Answer","text":"能。旧号通过 C2 新旧编号对照表跳转，共 8 条映射，覆盖改号、合并、拆分三类变化。"}},
+    {"@type":"Question","name":"抓取日期超过 30 天的条目还能用吗？","acceptedAnswer":{"@type":"Answer","text":"抓取日期只说明摘要的采集时点。处理方式是先看 D-006 下架登记里有没有替代说明，没有则视为摘要仍有效但需重新核对原出处。"}},
+    {"@type":"Question","name":"同义词表里的待补是什么意思？","acceptedAnswer":{"@type":"Answer","text":"待补表示该检索词尚无稳定映射目标，当前输入不会返回条目。11 月 5 日版本里「hsck 早期叫法」就是待补状态。"}},
+    {"@type":"Question","name":"为什么有的条目摘要是三行，有的显得很短？","acceptedAnswer":{"@type":"Answer","text":"摘要统一三行：对象、来源与日期、关联条目。显得短多因关联条目过少，B-0416 是典型例子。规则说明 v2 要求三行写不满时重新采集。"}}
+  ]
+}
+</script>
+</body>
+  </html>
