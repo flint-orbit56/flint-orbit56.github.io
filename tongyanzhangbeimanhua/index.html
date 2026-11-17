@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>童颜长辈漫画免费-全彩连载与角色关系解读</title>
+<meta name="description" content="童颜长辈漫画免费阅读入口，整理全彩连载章节、角色关系时间线、免费观看渠道差异与更新节奏，含长辈系角色设定解析、阅读顺序指南与读者评论汇总，方便按卷追更。">
+<meta name="keywords" content="童颜长辈漫画免费">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f4e3d0'/%3E%3Ccircle cx='24' cy='26' r='9' fill='%23c85a3c'/%3E%3Ccircle cx='43' cy='30' r='7' fill='%23e0a23a'/%3E%3Cpath d='M14 52c4-9 12-13 20-13s14 4 17 13z' fill='%233f6b62'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#2b2320;
+  --ink-soft:#5c504a;
+  --paper:#fbf6ef;
+  --paper-2:#f4e9dc;
+  --card:#ffffff;
+  --line:#e2d3c2;
+  --brand:#c8503a;
+  --brand-deep:#9c3826;
+  --accent:#3f6b62;
+  --accent-2:#e0a23a;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 6px 20px rgba(70,45,30,.10);
+  --shadow-s:0 2px 8px rgba(70,45,30,.08);
+  --gap:clamp(14px,2vw,22px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--brand-deep);text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0 0 .9em;}
+ul,ol{margin:0 0 .9em;padding-left:1.3em;}
+button{font-family:inherit;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(14px,3vw,28px);}
+.skip{position:absolute;left:-9999px;}
+.skip:focus{left:12px;top:6px;position:fixed;z-index:200;background:#fff;padding:8px 14px;border-radius:var(--radius-s);box-shadow:var(--shadow);}
+
+/* 吸顶公告 + 页头 */
+.sticky-stack{position:sticky;top:0;z-index:100;box-shadow:var(--shadow-s);}
+.announce{
+  background:var(--accent);
+  color:#f3fbf8;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap;}
+.announce-tag{background:#f3fbf8;color:var(--accent);border-radius:4px;padding:1px 7px;font-weight:700;font-size:12px;}
+.announce b{font-weight:700;}
+.header{
+  background:rgba(251,246,239,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.header .wrap{display:flex;align-items:center;gap:18px;padding-top:10px;padding-bottom:10px;}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.brand-mark{width:42px;height:42px;flex-shrink:0;}
+.brand-text{font-weight:800;font-size:19px;letter-spacing:.5px;color:var(--brand-deep);}
+.brand-text small{display:block;font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:1.5px;}
+nav.main-nav{margin-left:auto;}
+.nav-list{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap;}
+.nav-list a{display:block;padding:7px 11px;border-radius:var(--radius-s);font-size:14.5px;color:var(--ink-soft);}
+.nav-list a:hover,.nav-list a:focus-visible{background:var(--paper-2);color:var(--brand-deep);text-decoration:none;}
+.nav-list a[aria-current="true"]{color:var(--brand-deep);font-weight:700;background:var(--paper-2);}
+.menu-btn{display:none;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:8px 12px;font-size:14px;color:var(--ink);cursor:pointer;}
+.menu-btn:focus-visible,.search-btn:focus-visible,.top-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+
+.search{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;}
+.search input{border:0;outline:0;background:transparent;font-size:14px;width:130px;color:var(--ink);}
+.search-btn{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:5px 12px;font-size:13.5px;cursor:pointer;}
+.search-wrap{position:relative;}
+.search-feedback{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);box-shadow:var(--shadow);padding:10px 14px;font-size:13.5px;min-width:220px;display:none;z-index:60;color:var(--ink-soft);}
+.search-feedback.show{display:block;}
+
+/* 锚点偏移 */
+section[id],article[id],div[id].anchor{scroll-margin-top:112px;}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#fdf8f1 0%,#f6e8d8 60%,#f2ddc9 100%);border-bottom:1px solid var(--line);}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,48px);align-items:center;padding-top:clamp(28px,5vw,58px);padding-bottom:clamp(28px,5vw,58px);}
+.hero-kicker{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--brand-deep);font-size:13px;border-radius:999px;padding:4px 13px;margin-bottom:14px;letter-spacing:.5px;}
+.hero h1{font-size:clamp(30px,4.4vw,48px);color:var(--brand-deep);letter-spacing:1px;}
+.hero-sub{font-size:clamp(15px,1.6vw,17px);color:var(--ink-soft);max-width:34em;margin-top:14px;}
+.hero-metrics{display:flex;gap:clamp(16px,3vw,36px);margin:22px 0 24px;flex-wrap:wrap;}
+.metric strong{display:block;font-size:clamp(20px,2.4vw,26px);color:var(--accent);}
+.metric span{font-size:12.5px;color:var(--ink-soft);letter-spacing:.5px;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;font-size:15px;font-weight:600;border:1px solid transparent;transition:transform .15s ease;}
+.btn:hover{transform:translateY(-2px);text-decoration:none;}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(200,80,58,.28);}
+.btn-ghost{background:#fff;color:var(--brand-deep);border-color:var(--line);}
+.hero-art{position:relative;min-height:280px;display:flex;align-items:center;justify-content:center;}
+.hero-art svg{width:100%;max-width:420px;height:auto;}
+
+/* 布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(20px,3vw,38px);padding:clamp(26px,4vw,46px) 0;}
+.main-col{min-width:0;}
+.side-col{min-width:0;}
+
+/* 板块通用 */
+.block{margin-bottom:clamp(34px,5vw,52px);}
+.block-head{display:flex;align-items:baseline;gap:12px;border-left:5px solid var(--brand);padding-left:12px;margin-bottom:6px;}
+.block-head h2{font-size:clamp(20px,2.3vw,25px);color:var(--ink);}
+.block-desc{color:var(--ink-soft);font-size:14.5px;margin:0 0 18px;padding-left:17px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-s);}
+.tag{display:inline-block;background:var(--paper-2);color:var(--brand-deep);font-size:12.5px;border-radius:999px;padding:2px 10px;margin:0 6px 6px 0;}
+.tag:hover{background:var(--brand);color:#fff;text-decoration:none;}
+
+/* 精选推荐网格 */
+.grid-feature{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);}
+.f-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-s);display:flex;flex-direction:column;transition:transform .15s ease;}
+.f-card:hover{transform:translateY(-3px);}
+.f-card img{width:100%;height:150px;object-fit:cover;}
+.f-card .body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.f-card h3{font-size:16px;}
+.f-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+.meta{font-size:12px;color:var(--accent);letter-spacing:.4px;}
+
+/* 最新更新列表 */
+.update-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);}
+.update-list li{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:12px 4px;border-bottom:1px dashed var(--line);}
+.update-list time{font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums;}
+.update-list .title{font-size:15px;font-weight:600;}
+.update-list .note{font-size:12.5px;color:var(--ink-soft);display:block;font-weight:400;}
+.chapter{font-size:12.5px;color:var(--brand-deep);white-space:nowrap;}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
+.cat-item{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 13px;font-size:14px;color:var(--ink);transition:border-color .15s ease,transform .15s ease;}
+.cat-item:hover{border-color:var(--brand);transform:translateY(-2px);text-decoration:none;}
+.cat-item span{display:block;font-size:12px;color:var(--ink-soft);margin-top:3px;}
+
+/* 深度解析 */
+.analysis{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,30px);box-shadow:var(--shadow-s);}
+.analysis h2{font-size:clamp(21px,2.4vw,26px);margin-bottom:4px;}
+.analysis .lead{color:var(--ink-soft);font-size:14.5px;margin-bottom:18px;}
+.analysis h3{font-size:17.5px;margin:22px 0 8px;color:var(--accent);}
+.analysis p{font-size:15.5px;}
+.quote-card{border-left:4px solid var(--accent-2);background:var(--paper-2);padding:12px 16px;border-radius:0 var(--radius-s) var(--radius-s) 0;margin:14px 0;font-size:15px;color:var(--ink-soft);}
+.table-wrap{overflow-x:auto;margin:12px 0 6px;}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:420px;}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+th{background:var(--paper-2);font-weight:700;}
+td.num{font-variant-numeric:tabular-nums;}
+
+/* 体验指南 步骤 */
+.steps{list-style:none;counter-reset:step;padding:0;margin:0;display:grid;gap:12px;}
+.steps li{counter-increment:step;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:14px 16px 14px 56px;position:relative;font-size:14.5px;}
+.steps li::before{content:counter(step);position:absolute;left:14px;top:13px;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;}
+.steps strong{color:var(--brand-deep);}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);}
+.compare .panel{border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:#fff;box-shadow:var(--shadow-s);}
+.compare .panel.a{border-top:5px solid var(--accent);}
+.compare .panel.b{border-top:5px solid var(--accent-2);}
+.compare h3{font-size:16px;margin-bottom:10px;}
+.compare ul{margin:0;padding-left:1.1em;font-size:14px;color:var(--ink-soft);}
+.compare li{margin-bottom:6px;}
+
+/* FAQ */
+details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:10px;box-shadow:var(--shadow-s);}
+summary{cursor:pointer;padding:13px 16px;font-weight:600;font-size:15px;list-style:none;position:relative;padding-right:40px;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";position:absolute;right:16px;top:11px;color:var(--brand);font-size:19px;font-weight:400;}
+details[open] summary::after{content:"−";}
+details .answer{padding:0 16px 14px;font-size:14.5px;color:var(--ink-soft);}
+summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px;}
+
+/* 评论 */
+.comment-list{display:grid;gap:12px;}
+.comment{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:13px 16px;box-shadow:var(--shadow-s);}
+.comment-top{display:flex;align-items:baseline;gap:10px;font-size:12.5px;color:var(--ink-soft);margin-bottom:5px;}
+.comment-top b{font-size:13.5px;color:var(--accent);}
+.comment p{margin:0;font-size:14.5px;}
+.stars{color:var(--accent-2);font-size:12.5px;letter-spacing:1px;}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);}
+.news-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;box-shadow:var(--shadow-s);}
+.news-item h3{font-size:15.5px;margin-bottom:6px;}
+.news-item p{font-size:13.5px;color:var(--ink-soft);margin:0 0 8px;}
+.news-item time{font-size:12px;color:var(--accent);}
+
+/* 榜单时间线 */
+.timeline{list-style:none;padding:0 0 0 18px;margin:0;border-left:2px solid var(--line);}
+.timeline li{position:relative;padding:0 0 16px 14px;font-size:14.5px;}
+.timeline li::before{content:"";position:absolute;left:-23px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--brand);}
+.timeline time{display:block;font-size:12.5px;color:var(--accent);font-variant-numeric:tabular-nums;}
+
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank;display:grid;gap:9px;}
+.rank-list li{counter-increment:rank;display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:10px 13px;font-size:14.5px;}
+.rank-list li::before{content:counter(rank);width:24px;height:24px;border-radius:6px;background:var(--paper-2);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;}
+.rank-list li:nth-child(-n+3)::before{background:var(--brand);color:#fff;}
+.rank-list .score{font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums;}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:var(--shadow-s);margin-bottom:18px;}
+.side-card h3{font-size:16px;margin-bottom:10px;color:var(--accent);}
+.side-nav{list-style:none;padding:0;margin:0;display:grid;gap:2px;}
+.side-nav a{display:block;font-size:14px;color:var(--ink-soft);padding:6px 9px;border-radius:6px;border-left:3px solid transparent;}
+.side-nav a:hover,.side-nav a.active{background:var(--paper-2);color:var(--brand-deep);border-left-color:var(--brand);text-decoration:none;font-weight:600;}
+.side-card p{font-size:13.5px;color:var(--ink-soft);margin:0 0 8px;}
+.side-card .note{font-size:12px;color:var(--ink-soft);opacity:.85;}
+
+/* 页尾 */
+.footer{background:#2b2320;color:#e8ddd2;margin-top:20px;}
+.footer .wrap{padding-top:clamp(28px,4vw,44px);padding-bottom:22px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(18px,3vw,34px);}
+.footer h4{font-size:14.5px;color:#fff;margin-bottom:10px;letter-spacing:.5px;}
+.footer p,.footer li{font-size:13.5px;color:#c8b8a8;}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;}
+.footer a{color:#ddc9b6;}
+.footer a:hover{color:#fff;}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.footer-brand .brand-text{color:#fff;}
+.footer-brand .brand-text small{color:#a99a8c;}
+.footer-bottom{border-top:1px solid #453a33;margin-top:26px;padding-top:16px;font-size:12.5px;color:#a99a8c;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+
+/* 回到顶部 */
+.top-btn{position:fixed;right:18px;bottom:22px;z-index:90;background:var(--brand);color:#fff;border:0;border-radius:50%;width:46px;height:46px;font-size:13px;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .15s ease;line-height:1.15;}
+.top-btn.show{opacity:1;pointer-events:auto;}
+.top-btn:hover{transform:translateY(-3px);}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;}
+  .side-col{order:2;}
+  .hero .wrap{grid-template-columns:1fr;}
+  .hero-art{order:-1;min-height:200px;}
+  .grid-feature{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  body{font-size:15.5px;}
+  .header .wrap{flex-wrap:wrap;gap:10px;}
+  .menu-btn{display:block;margin-left:auto;}
+  nav.main-nav{order:5;width:100%;display:none;}
+  nav.main-nav.open{display:block;}
+  .nav-list{flex-direction:column;gap:0;padding:6px 0 4px;border-top:1px solid var(--line);}
+  .nav-list a{padding:10px 8px;border-radius:6px;}
+  .search{margin-left:0;order:4;}
+  .search input{width:100%;}
+  .search-wrap{flex:1 1 100%;}
+  .search{width:100%;}
+  .hero-actions .btn{flex:1 1 auto;text-align:center;}
+  .grid-feature{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .compare{grid-template-columns:1fr;}
+  .news-grid{grid-template-columns:1fr;}
+  .update-list li{grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;}
+  .update-list time{grid-column:1/-1;}
+  .footer-grid{grid-template-columns:1fr;}
+  .top-btn{width:42px;height:42px;right:12px;bottom:14px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none!important;animation:none!important;}
+  .f-card:hover,.cat-item:hover,.btn:hover,.top-btn:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-stack">
+  <div class="announce">
+    <div class="wrap">
+      <span class="announce-tag">更新</span>
+      <span><b>童颜长辈漫画免费</b>频道 2026-11-06 补档第 4 卷「旧宅春宴」全 12 话，11-07 新增角色关系图修订版，漫画库已同步章节索引。</span>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="站点图形标志：两张交叠的脸与一本摊开的书">
+          <rect width="64" height="64" rx="14" fill="#f4e3d0"/>
+          <circle cx="23" cy="25" r="9" fill="#c8503a"/>
+          <circle cx="43" cy="29" r="7" fill="#e0a23a"/>
+          <path d="M12 52c4-10 12-14 20-14s14 4 18 14z" fill="#3f6b62"/>
+          <path d="M20 44h24M20 49h18" stroke="#fbf6ef" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">童颜长辈漫画免费<small>章节索引 · 角色解读</small></div>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">目录</button>
+      <div class="search-wrap">
+        <form class="search" id="searchForm" role="search">
+          <label for="searchInput" class="skip">搜索本站内容</label>
+          <input id="searchInput" type="search" placeholder="搜章节、角色、分类" autocomplete="off">
+          <button class="search-btn" type="submit">查找</button>
+        </form>
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul class="nav-list">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#categories">分类入口</a></li>
+          <li><a href="/#analysis">深度解析</a></li>
+          <li><a href="/#guide">阅读指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap">
+    <div>
+      <span class="hero-kicker">长辈系全彩 · 连载索引</span>
+      <h1 id="heroTitle">童颜长辈漫画免费</h1>
+      <p class="hero-sub">把脸停在二十岁的长辈角色，放进家宴、旧宅与族谱里。这里按卷收录章节、角色关系与阅读顺序，用同一套口径标注哪些话已完结、哪些仍在周更。</p>
+      <div class="hero-metrics">
+        <div class="metric"><strong>126</strong><span>已收录话数</span></div>
+        <div class="metric"><strong>9</strong><span>常驻长辈角色</span></div>
+        <div class="metric"><strong>4</strong><span>完整卷册</span></div>
+        <div class="metric"><strong>11-06</strong><span>最近补档</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#updates">看最新更新</a>
+        <a class="btn btn-ghost" href="/#guide">按卷阅读顺序</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 320" role="img" aria-label="首屏原创构图：两代人的侧脸与翻开的书页">
+        <defs>
+          <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6e8d8"/>
+            <stop offset="1" stop-color="#efd4b8"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="20" width="384" height="280" rx="22" fill="url(#hg1)"/>
+        <circle cx="140" cy="118" r="52" fill="#e0a23a" opacity=".55"/>
+        <circle cx="292" cy="150" r="66" fill="#3f6b62" opacity=".22"/>
+        <path d="M96 232c10-42 34-62 62-62s50 18 58 62z" fill="#c8503a" opacity=".92"/>
+        <circle cx="158" cy="140" r="34" fill="#fbf6ef"/>
+        <path d="M140 140c0-11 8-19 18-19s18 8 18 19" fill="none" stroke="#c8503a" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="148" cy="138" r="3" fill="#2b2320"/>
+        <circle cx="168" cy="138" r="3" fill="#2b2320"/>
+        <path d="M252 244c8-32 26-48 48-48s40 14 46 48z" fill="#3f6b62"/>
+        <circle cx="300" cy="164" r="26" fill="#fbf6ef"/>
+        <path d="M286 162c0-9 6-15 14-15s14 6 14 15" fill="none" stroke="#3f6b62" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M292 160h5M304 160h5" stroke="#2b2320" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M70 262h286" stroke="#c8503a" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+        <path d="M124 268c18-12 40-12 58 0 18-12 40-12 58 0" fill="none" stroke="#9c3826" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="330" cy="86" r="7" fill="#e0a23a"/>
+        <circle cx="70" cy="76" r="5" fill="#c8503a"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap">
+    <div class="layout">
+      <div class="main-col">
+
+        <!-- 领域概览 -->
+        <section class="block card" id="overview" style="padding:clamp(18px,3vw,28px);" aria-labelledby="overviewTitle">
+          <div class="block-head"><h2 id="overviewTitle">领域概览：长辈系漫画到底在画什么</h2></div>
+          <p class="block-desc">用具体作品与规则说明题材边界，不泛谈行业。</p>
+          <p>长辈系指主角以叔伯、姑婶、祖辈身份登场，却保留少年或少女面部的角色设定。画面语言通常把“辈分”交给服装、称呼与座次，把“童颜”交给脸型与瞳色。读者追的是两套信号互相打架时产生的张力。</p>
+          <p>常见三支：家宴群像（如《旧宅春宴》）、职场长辈（如《档案室的老周》）、族谱悬疑（如《祠堂第七页》）。三支的冲突装置不同，前者靠座次与夹菜，中者靠工龄与权限，后者靠辈分与继承顺序。判断一部作品是否属于本类，看称呼是否先于外貌被交代。</p>
+          <p>2026 年 10 月 19 日《旧宅春宴》第 3 卷单行本附录里，作者写明角色“顾长宁”的视觉年龄设定为 24 岁，叙事年龄 58 岁，并在附录第 6 页给出三条遮掩线索：鬓角、手背、称谓。这三条线索后来被读者整理成入门辨认法。</p>
+        </section>
+
+        <!-- 精选推荐 -->
+        <section class="block" id="featured" aria-labelledby="featuredTitle">
+          <div class="block-head"><h2 id="featuredTitle">精选内容推荐：编辑部本周挑出的六部</h2></div>
+          <p class="block-desc">按“设定密度、关系清晰度、连载稳定度”三项各给一个判断，不评分排名。</p>
+          <div class="grid-feature">
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-oldhouse/600/400" width="600" height="400" loading="lazy" alt="旧宅庭院里的长桌宴席场景插画" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">家宴群像 · 已完结 38 话</span>
+                <h3>旧宅春宴</h3>
+                <p>顾长宁以“二叔”身份主持春宴，三代人围绕一张圆桌换位。设定密度最高，第 12 话起每话附一页族谱。</p>
+              </div>
+            </article>
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-archive/600/400" width="600" height="400" loading="lazy" alt="堆满档案盒的老式办公室走廊" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">职场长辈 · 连载至 47 话</span>
+                <h3>档案室的老周</h3>
+                <p>周明远工龄 31 年，脸停在 28 岁。冲突靠权限交接展开，第 40 话“值班表”是关键节点。</p>
+              </div>
+            </article>
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-shrine/600/400" width="600" height="400" loading="lazy" alt="昏暗祠堂中摊开的线装族谱" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">族谱悬疑 · 连载至 22 话</span>
+                <h3>祠堂第七页</h3>
+                <p>沈家最小的姑姑只有 26 岁的外貌，却握着族谱解释权。悬疑线清晰，但更新间隔偏长。</p>
+              </div>
+            </article>
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-kitchen/600/400" width="600" height="400" loading="lazy" alt="老式厨房里熬汤的灶台与蒸汽" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">日常单元 · 已完结 16 话</span>
+                <h3>三姑的汤</h3>
+                <p>每话一道汤对应一次家庭议事。信息量小，适合先看两话判断是否喜欢这种节奏。</p>
+              </div>
+            </article>
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-school/600/400" width="600" height="400" loading="lazy" alt="旧校舍门前的长椅与落叶" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">校园长辈 · 连载至 31 话</span>
+                <h3>门卫老陈的第七次毕业</h3>
+                <p>陈守义在同一所中学守了 40 年，脸没变。结构像短篇集，每届学生各占两话。</p>
+              </div>
+            </article>
+            <article class="f-card">
+              <img src="https://picsum.photos/seed/tongyan-ledger/600/400" width="600" height="400" loading="lazy" alt="灯下翻开的账本与算盘" style="object-fit:cover;">
+              <div class="body">
+                <span class="meta">商号传承 · 连载至 19 话</span>
+                <h3>账房里的太奶奶</h3>
+                <p>账目数字直接写进对白，第 14 话用两页对照表解释分成规则，信息密度高于同题材平均。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="block" id="updates" aria-labelledby="updatesTitle">
+          <div class="block-head"><h2 id="updatesTitle">最新更新：2026 年 11 月 3 日至 11 月 8 日</h2></div>
+          <p class="block-desc">只记已上线的番话与补档，日期取更新当天。</p>
+          <ul class="update-list">
+            <li>
+              <time datetime="2026-11-06">11-06</time>
+              <span class="title">旧宅春宴<span class="note">第 4 卷补档完成，含“春宴座次图”附录一页</span></span>
+              <span class="chapter">第 37—38 话</span>
+            </li>
+            <li>
+              <time datetime="2026-11-07">11-07</time>
+              <span class="title">档案室的老周<span class="note">角色关系图修订版上线，补上“值班表”一节</span></span>
+              <span class="chapter">关系图</span>
+            </li>
+            <li>
+              <time datetime="2026-11-05">11-05</time>
+              <span class="title">祠堂第七页<span class="note">第 22 话“第七页背面”更新，正文未附解释</span></span>
+              <span class="chapter">第 22 话</span>
+            </li>
+            <li>
+              <time datetime="2026-11-03">11-03</time>
+              <span class="title">门卫老陈的第七次毕业<span class="note">第 31 话，第七届学生线收束</span></span>
+              <span class="chapter">第 31 话</span>
+            </li>
+            <li>
+              <time datetime="2026-11-02">11-02</time>
+              <span class="title">账房里的太奶奶<span class="note">第 19 话，分成表补一列“长房补贴”</span></span>
+              <span class="chapter">第 19 话</span>
+            </li>
+            <li>
+              <time datetime="2026-11-01">11-01</time>
+              <span class="title">三姑的汤<span class="note">全 16 话完结，末话附食材清单</span></span>
+              <span class="chapter">完结</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="block" id="categories" aria-labelledby="categoriesTitle">
+          <div class="block-head"><h2 id="categoriesTitle">分类入口：按你会搜的词分组</h2></div>
+          <p class="block-desc">点进去是同标签下的作品与章节，不是空页。</p>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#featured">家宴群像<span>座次与夹菜的冲突</span></a>
+            <a class="cat-item" href="/#featured">长辈系全彩漫画<span>彩页比例与网点处理</span></a>
+            <a class="cat-item" href="/#featured">童颜角色设定<span>视觉年龄与叙事年龄</span></a>
+            <a class="cat-item" href="/#featured">族谱悬疑<span>继承顺序与称谓</span></a>
+            <a class="cat-item" href="/#featured">职场长辈<span>工龄与权限交接</span></a>
+            <a class="cat-item" href="/#featured">校园门卫线<span>短篇集结构</span></a>
+            <a class="cat-item" href="/#featured">商号账房<span>数字写进对白</span></a>
+            <a class="cat-item" href="/#featured">日常单元剧<span>单话完结</span></a>
+            <a class="cat-item" href="/#guide">免费观看顺序<span>按卷还是按话</span></a>
+            <a class="cat-item" href="/#analysis">长辈称呼表<span>叔伯姑婶怎么排</span></a>
+            <a class="cat-item" href="/#comments">读者口碑短评<span>含中评与吐槽</span></a>
+            <a class="cat-item" href="/#rank">本周追更榜<span>按章节推进速度</span></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="block" id="analysis" aria-labelledby="analysisTitle">
+          <article class="analysis">
+            <h2 id="analysisTitle">深度解析：童颜设定真正撑住故事的是称呼，不是脸</h2>
+            <p class="lead">全页唯一主体阅读区。以下三个判断都可以被具体章节反驳，欢迎按话核对。</p>
+
+            <h3>判断一：称呼出现的次序决定了读者先信哪一层</h3>
+            <p>《旧宅春宴》第 1 话第 5 页，顾长宁先被写为“二叔”，第 9 页才正面露脸。页面顺序与读者的信任顺序一致：先接受辈分，再接受年轻的脸。反过来，第 3 卷附录提到的早期分镜稿是“先露脸、后补称呼”，作者在第 3 页写明“读者会以为走错片场”，最终整段重画。</p>
+            <p>可核对结构可以拆成三项：称呼页、露脸页、首次被质疑的页。三项都在第 1 话内完成，说明设定在开篇就完成了自证，不靠后文补丁。</p>
+            <div class="table-wrap">
+              <table>
+                <caption style="caption-side:top;text-align:left;font-size:13px;color:#5c504a;padding-bottom:6px;">三部作品第 1 话的设定交代位置（按页码统计）</caption>
+                <thead>
+                  <tr><th>作品</th><th>称呼页</th><th>露脸页</th><th>首次被质疑页</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>旧宅春宴</td><td class="num">5</td><td class="num">9</td><td class="num">14</td></tr>
+                  <tr><td>档案室的老周</td><td class="num">2</td><td class="num">11</td><td class="num">17</td></tr>
+                  <tr><td>祠堂第七页</td><td class="num">7</td><td class="num">8</td><td class="num">21</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>三组数字里，《祠堂第七页》的称呼与露脸只隔一页，读者的“违和感”被压缩，代价是解释压力前移，第 21 页才补质疑，中间十三页完全靠族谱旁白撑住。</p>
+
+            <h3>判断二：手部细节比面部更能承担年龄信息</h3>
+            <p>把脸画年轻，代价是年龄只能转嫁给别处。11 月 2 日更新的《账房里的太奶奶》第 19 话第 6 格，太奶奶翻账本时给了手背特写：指节两道纹、虎口一处旧疤。这页没有一句台词解释年龄，但同话第 9 格的分成表里出现“长房补贴”一列，读者由此倒推她掌账至少三十年。</p>
+            <p>《档案室的老周》第 40 话的做法相反：全程没画手，改用手写值班表的笔迹变化，第 3 格字迹从正楷转连笔。两种方法都成立，但前者更快被读懂，后者需要对照前 39 话的笔迹。</p>
+            <div class="quote-card">读者常用的检验法：任取三格，遮住对白只留手与背景。若仍能判断谁是长辈，设定就站得住；判断不了，说明年龄信号全押在台词上。</div>
+
+            <h3>判断三：免费章节的排列方式改变了“追更”的含义</h3>
+            <p>按话排列的平台，读者从第 1 话顺序推进，第 4 卷补档对老读者几乎没有增量；按卷排列的版本把 37、38 话放进“旧宅春宴·第四卷”，反而让 11 月 6 日这次补档成为一次内容更新。同一批页面，两种排列，更新感差一整轮。</p>
+            <p>有说法称“按卷看更省时间”，这一条需要限定：只有当卷内话数完整时才成立。11 月 5 日《祠堂第七页》第 22 话单话上线，未归入任何卷，按卷看的人会漏掉它——这是推测，验证方法是看该作目录页是否在第 22 话后补了卷号。截至 11 月 8 日，目录页仍显示“第 22 话（待归卷）”。</p>
+
+            <h3>判断四：单元剧结构让长辈角色更难被记住</h3>
+            <p>《门卫老陈的第七次毕业》每届学生两话，陈守义的戏份被切得很碎。第 31 话收束第七届时，这位角色一共出现在 9 个格子以上却没说满十句话。信息点是：单元结构里，长辈是背景板而非推进器。</p>
+            <p>反过来，《三姑的汤》16 话完结，每话一道汤，三姑始终是决策者。两种结构都短，但“是否拥有决定权”比“出场页数”更能决定角色记忆度。这条判断可以被 11 月 1 日完结的末话反驳——末话三姑只出场一格，读者评论却集中在那一格。</p>
+          </article>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="guideTitle">
+          <div class="block-head"><h2 id="guideTitle">体验指南：按什么顺序看，免费部分怎么用</h2></div>
+          <p class="block-desc">给第一次接触本类作品的人一条可执行的路径。</p>
+          <ol class="steps">
+            <li><strong>先用两话试水。</strong>选《旧宅春宴》第 1 话和第 12 话，前者看设定是否成立，后者看族谱附录能不能读懂。两话间隔足够暴露信息密度。</li>
+            <li><strong>再定追更方式。</strong>周更作品按话追，《档案室的老周》每周四更；已完结的先看卷末附录，《三姑的汤》末话附食材清单，可作为回看索引。</li>
+            <li><strong>核对免费范围。</strong>同一作品在不同入口的免费话数不一致，先用目录页比对第 1 话与最新话是否都开放，再决定在哪边读。</li>
+            <li><strong>做一张自己的称呼表。</strong>把叔、伯、姑、婶、舅、姨各写在纸上，遇新角色就填进格子，三话之后能明显减少回翻。</li>
+            <li><strong>看完一部再换题材。</strong>三支题材的冲突装置不同，交替读容易把座次规则和权限规则混在一起。</li>
+          </ol>
+          <div class="compare" style="margin-top:18px;">
+            <div class="panel a">
+              <h3>按话阅读适合谁</h3>
+              <ul>
+                <li>追周更，需要每话即时讨论</li>
+                <li>在意章节编号与更新日期</li>
+                <li>《祠堂第七页》这类未归卷作品必须按话看</li>
+              </ul>
+            </div>
+            <div class="panel b">
+              <h3>按卷阅读适合谁</h3>
+              <ul>
+                <li>补完旧作，想一次读完一段关系线</li>
+                <li>需要卷末附录、族谱、座次图做参照</li>
+                <li>《旧宅春宴》四卷结构完整，适合按卷</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="block" id="faq" aria-labelledby="faqTitle">
+          <div class="block-head"><h2 id="faqTitle">常见问题：角色设定、观看顺序、免费范围</h2></div>
+          <details>
+            <summary>童颜长辈漫画免费阅读时，先看第 1 话还是先看卷末附录？</summary>
+            <div class="answer">先看第 1 话。附录会直接写出角色视觉年龄与叙事年龄，提前看会削弱第 1 话“先称呼后露脸”的阅读体验；《旧宅春宴》第 3 卷附录第 6 页的三条遮掩线索，放在读完全卷后再核对更合适。</div>
+          </details>
+          <details>
+            <summary>长辈系漫画里的“视觉年龄”和“叙事年龄”分别指什么？</summary>
+            <div class="answer">视觉年龄是角色脸部与体态呈现的年龄，叙事年龄是剧情里按辈分、工龄、掌账年限推算出的年龄。顾长宁在《旧宅春宴》附录里的设定是 24 岁与 58 岁，相差 34 年，这个差值就是设定张力所在。</div>
+          </details>
+          <details>
+            <summary>《祠堂第七页》第 22 话为什么还没归入卷册？</summary>
+            <div class="answer">该话 11 月 5 日单独上线，目录页标注“待归卷”。按卷阅读的读者会漏掉这一话；按话追的人不受影响。截至 11 月 8 日，第 22 话的卷号仍是空白。</div>
+          </details>
+          <details>
+            <summary>《门卫老陈的第七次毕业》的阅读顺序能跳着看吗？</summary>
+            <div class="answer">可以。每届学生占两话，彼此独立。第 31 话收束第七届时会回扣前六届的物件，先看第 31 话再回头补，会把收束点当悬念读，两种读法都成立。</div>
+          </details>
+          <details>
+            <summary>同一部作品的免费章节在不同入口显示不一致，怎么判断？</summary>
+            <div class="answer">以目录页为准，逐话比对第 1 话与最新话是否开放。若目录页显示开放而正文页要求登录，属于入口差异，不是作品本身删减。11 月 6 日《旧宅春宴》补档时，目录页与正文页曾有三个小时不同步。</div>
+          </details>
+          <details>
+            <summary>手背特写真的能替代脸部年龄信息吗？</summary>
+            <div class="answer">在多格对照里可以。《账房里的太奶奶》第 19 话第 6 格用指节纹与虎口疤完成交代，没有配套台词；《档案室的老周》第 40 话改用手写笔迹变化，效果较慢但同样可读。两种方法都要求读者留意非脸部细节。</div>
+          </details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="block" id="comments" aria-labelledby="commentsTitle">
+          <div class="block-head"><h2 id="commentsTitle">用户评论：追更的人怎么说</h2></div>
+          <p class="block-desc">语气有高有低，部分直接指向具体话数与页码。</p>
+          <div class="comment-list">
+            <div class="comment">
+              <div class="comment-top"><b>@青团不加糖</b><span class="stars">★★★★★</span><span>11-06</span></div>
+              <p>《旧宅春宴》第 4 卷补档值了。座次图那一页把第 12 话和第 30 话的换位对上，之前一直没想通为什么第二次春宴二叔坐到了末席，看完附录就通了。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@档案室常客</b><span class="stars">★★★☆☆</span><span>11-07</span></div>
+              <p>关系图修订版说是补了“值班表”，实际只加了两条连线。第 40 话里老周交出钥匙那段仍然没有解释，修订版没解决这个问题。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@第七页背面</b><span class="stars">★★★★☆</span><span>11-05</span></div>
+              <p>第 22 话挺好，就是不归卷这点难受。目录里孤零零一条，找的时候得往下翻好久。内容上沈家姑姑第一次没说话，全靠翻页动作，比前面二十一话都克制。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@老陈第七届</b><span class="stars">★★★★★</span><span>11-04</span></div>
+              <p>第 31 话收尾那一格，陈守义把七届学生的名册摊在门卫室桌上，没有一个字，但我看懂了。单元剧能把长辈写成背景板，也能在最后一格把人立起来。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@算盘珠子</b><span class="stars">★★★★☆</span><span>11-02</span></div>
+              <p>第 19 话的分成表比剧情还有意思，“长房补贴”那列补上之后，前十八话的几句抱怨台词突然都能对上账。唯一挑刺：表里数字字号偏小，手机上看要放大。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@汤要凉了</b><span class="stars">★★★☆☆</span><span>11-01</span></div>
+              <p>《三姑的汤》完结了，末话食材清单好评，但整体节奏偏慢。十六话里有五话在讨论要不要换一口锅，信息量确实不大，适合睡前看。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@数格子的人</b><span class="stars">★★★★☆</span><span>10-28</span></div>
+              <p>试了遮住对白只看手的方法，《账房里的太奶奶》确实三格就能判断辈分，《档案室的老周》不行，得翻前几话笔迹。这个方法有适用边界。</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>@等周四</b><span class="stars">★★★★★</span><span>10-24</span></div>
+              <p>《档案室的老周》周四更这件事已经成了我的固定节点。第 39 话权限交接那两页，把三十一年工龄压在一次签字上，比任何回忆独白都有效。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="newsTitle">
+          <div class="block-head"><h2 id="newsTitle">相关资讯：补档、修订与完结动态</h2></div>
+          <p class="block-desc">只记与章节直接相关的事，摘要不复述标题。</p>
+          <div class="news-grid">
+            <article class="news-item">
+              <h3>《旧宅春宴》第四卷补档含座次图附录</h3>
+              <p>补档覆盖第 37、38 话，附录共一页，标出两届春宴的座位变化。目录页同步新增“第四卷”分组。</p>
+              <time datetime="2026-11-06">2026-11-06</time>
+            </article>
+            <article class="news-item">
+              <h3>《档案室的老周》关系图修订</h3>
+              <p>修订版新增两条连线，分别指向第 40 话交钥匙场景中的两位在场者，其余节点未改动。</p>
+              <time datetime="2026-11-07">2026-11-07</time>
+            </article>
+            <article class="news-item">
+              <h3>《祠堂第七页》第 22 话单话上线</h3>
+              <p>本话未归入卷册，目录页标注“待归卷”。正文以翻页动作为主，对白不足十句。</p>
+              <time datetime="2026-11-05">2026-11-05</time>
+            </article>
+            <article class="news-item">
+              <h3>《三姑的汤》全 16 话完结</h3>
+              <p>末话附食材清单一份，列十六道汤的主料与出现话数，可当作回看索引使用。</p>
+              <time datetime="2026-11-01">2026-11-01</time>
+            </article>
+          </div>
+        </section>
+
+        <!-- 追更榜 -->
+        <section class="block" id="rank" aria-labelledby="rankTitle">
+          <div class="block-head"><h2 id="rankTitle">本周追更榜：按章节推进速度排</h2></div>
+          <p class="block-desc">统计口径为 11 月 1 日至 11 月 8 日新增话数与目录更新次数之和。</p>
+          <ol class="rank-list">
+            <li><span>旧宅春宴（补档 2 话 + 附录 1 页）</span><span class="score">3 分</span></li>
+            <li><span>档案室的老周（关系图修订 + 目录更新）</span><span class="score">2 分</span></li>
+            <li><span>祠堂第七页（第 22 话上线）</span><span class="score">2 分</span></li>
+            <li><span>门卫老陈的第七次毕业（第 31 话收束）</span><span class="score">1 分</span></li>
+            <li><span>账房里的太奶奶（第 19 话补列）</span><span class="score">1 分</span></li>
+            <li><span>三姑的汤（完结，末话附录）</span><span class="score">1 分</span></li>
+          </ol>
+        </section>
+
+        <!-- 时间线 -->
+        <section class="block" id="timeline" aria-labelledby="timelineTitle">
+          <div class="block-head"><h2 id="timelineTitle">十月下旬至十一月的条目时间线</h2></div>
+          <p class="block-desc">同一事件只在时间线上出现一次，不复述其他板块内容。</p>
+          <ul class="timeline">
+            <li><time datetime="2026-10-24">10-24</time>《档案室的老周》第 39 话上线，权限交接场景首次出现在签字页。</li>
+            <li><time datetime="2026-10-28">10-28</time>读者整理出“遮住对白只看手”的辨认法，在评论文中出现并被多次引用。</li>
+            <li><time datetime="2026-10-31">10-31</time>《三姑的汤》倒数第二话上线，讨论是否更换汤锅。</li>
+            <li><time datetime="2026-11-01">11-01</time>《三姑的汤》第 16 话完结，附食材清单。</li>
+            <li><time datetime="2026-11-02">11-02</time>《账房里的太奶奶》第 19 话补一列“长房补贴”。</li>
+            <li><time datetime="2026-11-03">11-03</time>《门卫老陈的第七次毕业》第 31 话收束第七届学生线。</li>
+            <li><time datetime="2026-11-05">11-05</time>《祠堂第七页》第 22 话上线，未归卷。</li>
+            <li><time datetime="2026-11-06">11-06</time>《旧宅春宴》第四卷补档，含座次图附录。</li>
+            <li><time datetime="2026-11-07">11-07</time>《档案室的老周》关系图修订版上线。</li>
+            <li><time datetime="2026-11-08">11-08</time>目录页复核，第 22 话卷号仍空白。</li>
+          </ul>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="block" id="tags" aria-labelledby="tagsTitle">
+          <div class="block-head"><h2 id="tagsTitle">相关推荐：按搜索词找同类</h2></div>
+          <p class="block-desc">每个标签对应上文的板块或作品，不指向空页。</p>
+          <div>
+            <a class="tag" href="/#featured">长辈系全彩漫画推荐</a>
+            <a class="tag" href="/#featured">童颜角色设定</a>
+            <a class="tag" href="/#analysis">长辈称呼表</a>
+            <a class="tag" href="/#guide">免费观看顺序</a>
+            <a class="tag" href="/#analysis">手背特写辨认法</a>
+            <a class="tag" href="/#updates">第四卷补档</a>
+            <a class="tag" href="/#faq">视觉年龄与叙事年龄差</a>
+            <a class="tag" href="/#rank">本周追更榜</a>
+            <a class="tag" href="/#comments">读者口碑短评</a>
+            <a class="tag" href="/#news">祠堂第七页待归卷</a>
+          </div>
+        </section>
+
+        <!-- 补充：创作者证言 -->
+        <section class="block" id="creator" aria-labelledby="creatorTitle">
+          <div class="block-head"><h2 id="creatorTitle">创作者证言：设定取舍的三段自述</h2></div>
+          <p class="block-desc">据各作单行本附录与 10 月 26 日线上问答整理，保留原措辞。</p>
+          <div class="comment-list">
+            <div class="comment">
+              <div class="comment-top"><b>《旧宅春宴》作者</b><span>单行本第 3 卷附录</span></div>
+              <p>“先让读者叫出二叔，再让他看见那张脸。顺序反了就得靠旁白解释，旁白一多，座次图就白画了。”</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>《账房里的太奶奶》作画</b><span>10-26 线上问答</span></div>
+              <p>“脸不能老，账不能假。所以分成表上的数字我一个都不改，读者会自己去算三十年。”</p>
+            </div>
+            <div class="comment">
+              <div class="comment-top"><b>《门卫老陈的第七次毕业》作者</b><span>单行本第 2 卷附录</span></div>
+              <p>“每届学生两话，老陈只在门卫室出现。他记不记得住不重要，名册摊在桌上那一格，他才算出现。”</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side-col" aria-label="侧栏导航与说明">
+        <div class="side-card">
+          <h3>栏目导航</h3>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#featured">精选推荐</a></li>
+            <li><a href="/#updates">最新更新</a></li>
+            <li><a href="/#categories">分类入口</a></li>
+            <li><a href="/#analysis">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">追更榜</a></li>
+            <li><a href="/#timeline">条目时间线</a></li>
+            <li><a href="/#tags">相关推荐</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>本站数据口径（示例）</h3>
+          <p>收录 6 部作品、126 话、4 个完整卷册；更新日期以页面正文标注为准，参考时间 2026-11-08。</p>
+          <p class="note">作品名、角色名、章节号与评论均为示例数据，用于展示分类与阅读方法，不对应真实出版物。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="36" height="36" viewBox="0 0 64 64" role="img" aria-label="页脚图形标志">
+            <rect width="64" height="64" rx="14" fill="#f4e3d0"/>
+            <circle cx="23" cy="25" r="9" fill="#c8503a"/>
+            <circle cx="43" cy="29" r="7" fill="#e0a23a"/>
+            <path d="M12 52c4-10 12-14 20-14s14 4 18 14z" fill="#3f6b62"/>
+          </svg>
+          <div class="brand-text">童颜长辈漫画免费<small>章节索引 · 角色解读</small></div>
+        </div>
+        <p>把辈分、称呼与画面细节摆在同一张桌上，供按卷或按话核对。</p>
+      </div>
+      <div>
+        <h4>作品频道</h4>
+        <ul>
+          <li><a href="/#featured">旧宅春宴</a></li>
+          <li><a href="/#featured">档案室的老周</a></li>
+          <li><a href="/#featured">祠堂第七页</a></li>
+          <li><a href="/#featured">三姑的汤</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读方法</h4>
+        <ul>
+          <li><a href="/#guide">按卷阅读顺序</a></li>
+          <li><a href="/#analysis">称呼与露脸次序</a></li>
+          <li><a href="/#faq">免费范围比对</a></li>
+          <li><a href="/#timeline">条目时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动与反馈</h4>
+        <ul>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#rank">本周追更榜</a></li>
+          <li><a href="/#tags">相关推荐标签</a></li>
+          <li><a href="/#news">补档与修订</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>站内作品、角色、章节与评论均为示例数据，仅作阅读方法演示；正文所列更新对应 11 月 1 日至 11 月 8 日条目。更新时间：2026-11-08。</span>
+      <span>© 2026 童颜长辈漫画免费 · 内容索引</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" type="button" aria-label="回到顶部">顶部</button>
+
+<script>
+(function(){
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  function closeMenu(){
+    mainNav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded','false');
+  }
+  menuBtn.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mainNav.addEventListener('click', function(e){
+    if(e.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeMenu();
+  });
+
+  // 本地搜索
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+
+  // 建立可搜索条目索引（标题与文本）
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id], main article[id], main .block'));
+  function buildIndex(){
+    var chars = Array.prototype.slice.call(document.querySelectorAll('main h2, main h3'));
+    return chars;
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = input.value.trim();
+    if(!q){ feedback.classList.remove('show'); feedback.textContent = ''; return; }
+    var headings = buildIndex();
+    var hit = null;
+    for(var i = 0; i < headings.length; i++){
+      var t = headings[i].textContent || '';
+      if(t.indexOf(q) !== -1){ hit = headings[i]; break; }
+    }
+    if(!hit){
+      // 退而查找正文段落
+      var ps = document.querySelectorAll('main p, main li, main summary');
+      for(var j = 0; j < ps.length; j++){
+        if((ps[j].textContent || '').indexOf(q) !== -1){ hit = ps[j]; break; }
+      }
+    }
+    if(hit){
+      var target = hit.closest('section[id]') || hit.closest('article[id]');
+      feedback.textContent = '找到相关条目：「' + (hit.textContent || '').slice(0, 26) + '」';
+      feedback.classList.add('show');
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      } else {
+        hit.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    } else {
+      feedback.textContent = '没有找到「' + q + '」，可试试：旧宅春宴、第 22 话、座次图、称呼、追更榜。';
+      feedback.classList.add('show');
+    }
+  });
+  input.addEventListener('input', function(){
+    if(!input.value.trim()){ feedback.classList.remove('show'); }
+  });
+
+  // 回到顶部
+  var topBtn = document.getElementById('topBtn');
+  function toggleTop(){
+    if(window.scrollY > 420){ topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', toggleTop, {passive:true});
+  toggleTop();
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var current = -1;
+    targets.forEach(function(t, i){
+      if(t && t.offsetTop <= pos) current = i;
+    });
+    sideLinks.forEach(function(a, i){
+      var isCur = (i === current);
+      a.classList.toggle('active', isCur);
+      if(isCur){ a.setAttribute('aria-current','true'); } else { a.removeAttribute('aria-current'); }
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  window.addEventListener('resize', highlight);
+  highlight();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "童颜长辈漫画免费",
+  "description": "童颜长辈漫画免费阅读入口，整理全彩连载章节、角色关系时间线、免费观看渠道差异与更新节奏，含长辈系角色设定解析、阅读顺序指南与读者评论汇总。",
+  "inLanguage": "zh-CN",
+  "dateModified": "2026-11-08"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "童颜长辈漫画免费阅读时，先看第 1 话还是先看卷末附录？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "先看第 1 话。附录会直接写出角色视觉年龄与叙事年龄，提前看会削弱第 1 话“先称呼后露脸”的阅读体验；《旧宅春宴》第 3 卷附录第 6 页的三条遮掩线索，放在读完全卷后再核对更合适。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "长辈系漫画里的“视觉年龄”和“叙事年龄”分别指什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "视觉年龄是角色脸部与体态呈现的年龄，叙事年龄是剧情里按辈分、工龄、掌账年限推算出的年龄。顾长宁在《旧宅春宴》附录里的设定是 24 岁与 58 岁，相差 34 年，这个差值就是设定张力所在。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《祠堂第七页》第 22 话为什么还没归入卷册？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "该话 11 月 5 日单独上线，目录页标注“待归卷”。按卷阅读的读者会漏掉这一话；按话追的人不受影响。截至 11 月 8 日，第 22 话的卷号仍是空白。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《门卫老陈的第七次毕业》的阅读顺序能跳着看吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。每届学生占两话，彼此独立。第 31 话收束第七届时会回扣前六届的物件，先看第 31 话再回头补，会把收束点当悬念读，两种读法都成立。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "同一部作品的免费章节在不同入口显示不一致，怎么判断？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "以目录页为准，逐话比对第 1 话与最新话是否开放。若目录页显示开放而正文页要求登录，属于入口差异，不是作品本身删减。11 月 6 日《旧宅春宴》补档时，目录页与正文页曾有三个小时不同步。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "手背特写真的能替代脸部年龄信息吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在多格对照里可以。《账房里的太奶奶》第 19 话第 6 格用指节纹与虎口疤完成交代，没有配套台词；《档案室的老周》第 40 话改用手写笔迹变化，效果较慢但同样可读。两种方法都要求读者留意非脸部细节。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+  </html>
